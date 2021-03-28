@@ -1,9 +1,2 @@
 @import "./utils/variables";
-.hder {
-    border: solid 1px $colour-black;
-    height: 15rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;   
-}
+@import "./layout/header";
