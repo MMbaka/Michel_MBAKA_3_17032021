@@ -1,12 +1,63 @@
-.hder {
-  height: 15rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+@media (max-width: 599px) {
+  .hder {
+    border: 0.1rem solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .hder__logo {
+    width: 100%;
+    height: 3rem;
+    border: 0.1rem solid black;
+  }
+  .hder__geo {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 3rem;
+    border: 0.1rem solid black;
+  }
+  .hder__tit {
+    border: 0.1rem solid black;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .hder__tit--reserv {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 0.1rem solid black;
+  }
+  .hder__tit--reserv h1 {
+    font-size: 2px;
+  }
+  .hder__tit--decouv {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 0.1rem solid black;
+  }
+  .hder__tit--btn {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 0.1rem solid black;
+    text-align: center;
+    justify-content: center;
+  }
+  .hder__tit--btn .action-buton {
+    background-color: #9356dc;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 22px;
+    height: 10px;
+    padding: 18px 100px;
+    border-radius: 20px;
+  }
 }
-.hder__logo {
-  font-size: 7rem;
-  color: #001534;
-  margin-left: 10rem;
-}/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
