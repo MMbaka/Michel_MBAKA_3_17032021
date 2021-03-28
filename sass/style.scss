@@ -1,2 +1,21 @@
-@import "./utils/variables";
-@import "./layout/header";
+$colour-primary: #f6f6f6;
+$colour-secondary: #001534;
+$colour-accent: #D6FFF5;
+$colour-white: #fff;
+$colour-invalid: #DB464B;
+
+$heading-shadow-size: .55rem;
+$layout-margin: 6rem;
+$grid-gutter: $layout-margin * .25;
+.hder {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;   
+    &__logo {
+        font-size: 7rem;
+        color: $colour-secondary;
+        margin-left: 10rem;
+    }
+}

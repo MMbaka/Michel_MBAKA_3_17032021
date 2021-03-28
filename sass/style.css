@@ -1,0 +1,14 @@
+.hder {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.hder__logo {
+  font-size: 7rem;
+  color: #001534;
+  margin-left: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
