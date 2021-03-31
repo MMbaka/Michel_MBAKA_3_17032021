@@ -8,56 +8,77 @@
   }
   .hder__logo {
     width: 100%;
-    height: 3rem;
-    border: 0.1rem solid black;
+    height: 5rem;
+    text-align: center;
+  }
+  .hder__logo img {
+    margin-top: 20px;
+    width: 230px;
   }
   .hder__geo {
     background-color: #eaeaea;
     width: 100%;
-    height: 3rem;
-    border: 0.1rem solid black;
+    height: 5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .hder__geo--i {
+    margin-right: 15px;
   }
   .hder__tit {
-    border: 0.1rem solid black;
     background-color: #f6f6f6;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .hder__tit--reserv {
-    width: 100%;
+    width: 80%;
     height: auto;
     text-align: center;
-    border: 0.1rem solid black;
   }
   .hder__tit--reserv h1 {
-    font-size: 2px;
+    font-size: 15px;
   }
   .hder__tit--decouv {
-    width: 100%;
+    width: 70%;
     height: auto;
     text-align: center;
-    border: 0.1rem solid black;
+    margin-top: 0px;
+  }
+  .hder__tit--decouv p {
+    font-size: 15px;
   }
   .hder__tit--btn {
     display: flex;
     width: 100%;
     height: auto;
-    border: 0.1rem solid black;
     text-align: center;
     justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .hder__tit--btn .action-buton {
     background-color: #9356dc;
     color: white;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     width: 22px;
     height: 10px;
     padding: 18px 100px;
-    border-radius: 20px;
+    border-radius: 25px;
+    text-shadow: 0px 2px black;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    float: left;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+  .hder__tit--btn .action-buton:active {
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+    border-bottom: 1px solid;
+  }
+}/*# sourceMappingURL=style.css.map */
