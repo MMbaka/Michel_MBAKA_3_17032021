@@ -109,7 +109,6 @@
     height: 30px;
     padding: 30px 0px;
     border-radius: 30px;
-    text-shadow: 0px 2px black;
     box-shadow: 0px 0px 15px #130f0f5b;
     margin-top: 40px;
   }
@@ -123,7 +122,6 @@
     align-items: center;
     color: #fff;
     margin-left: -15px;
-    text-shadow: none;
   }
   .fonc_op--choix-iix, .fonc_op--choix-iip, .fonc_op--choix-iis, .fonc_op--comp-iix, .fonc_op--comp-iip, .fonc_op--comp-iis, .fonc_op--degus-iix, .fonc_op--degus-iip, .fonc_op--degus-iis {
     display: flex;
@@ -137,16 +135,16 @@
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    text-shadow: none;
     font-size: 21px;
   }
 
   .resto {
+    /*Paramettrage section restorant*/
     border: 0.1rem solid black;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: #f6f6f6;
   }
   .resto_tit {
@@ -154,5 +152,32 @@
     margin-left: 20px;
     font-size: 30px;
     border: 0.1rem solid black;
+  }
+  .resto .resto_img {
+    border: 0.1rem solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .resto .resto_img--a, .resto .resto_img--b, .resto .resto_img--c, .resto .resto_img--d {
+    border: 0.1rem solid black;
+    width: 90%;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px #130f0f5b;
+    background-color: #fff;
+  }
+  .resto .resto_img--a-ai, .resto .resto_img--a-bi, .resto .resto_img--a-ci, .resto .resto_img--a-di, .resto .resto_img--b-ai, .resto .resto_img--b-bi, .resto .resto_img--b-ci, .resto .resto_img--b-di, .resto .resto_img--c-ai, .resto .resto_img--c-bi, .resto .resto_img--c-ci, .resto .resto_img--c-di, .resto .resto_img--d-ai, .resto .resto_img--d-bi, .resto .resto_img--d-ci, .resto .resto_img--d-di {
+    border: 0.1rem solid black;
+    width: 80%;
+    height: 200px;
+    border-radius: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
