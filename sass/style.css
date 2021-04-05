@@ -147,19 +147,43 @@
   .resto_tit {
     margin-top: 60px;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 25px;
   }
-  .resto .resto_img {
+  .resto_badg1 {
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: #99e2d0;
+    position: relative;
+    left: 290px;
+    top: 50px;
+    color: #008766;
+    border-radius: 2px;
+  }
+  .resto_badg2 {
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: #99e2d0;
+    position: relative;
+    left: 290px;
+    top: 340px;
+    color: #008766;
+    border-radius: 2px;
+  }
+  .resto_img {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     align-items: center;
     justify-content: space-around;
-    padding-top: 20px;
     padding-bottom: 80px;
+    margin-top: -40px;
   }
-  .resto .resto_img--1, .resto .resto_img--2, .resto .resto_img--3, .resto .resto_img--4 {
+  .resto_img--1, .resto_img--2, .resto_img--3, .resto_img--4 {
     width: 90%;
     height: 300px;
     border-radius: 25px;
@@ -168,35 +192,34 @@
     box-shadow: 0px 0px 15px #130f0f5b;
     background-color: #fff;
   }
-  .resto .resto_img--1-i, .resto .resto_img--2-i, .resto .resto_img--3-i, .resto .resto_img--4-i {
+  .resto_img--1-i, .resto_img--2-i, .resto_img--3-i, .resto_img--4-i {
     width: 100%;
     height: 200px;
     border-radius: 25px 25px 0px 0px;
   }
-  .resto .resto_img--1-i img, .resto .resto_img--2-i img, .resto .resto_img--3-i img, .resto .resto_img--4-i img {
+  .resto_img--1-i img, .resto_img--2-i img, .resto_img--3-i img, .resto_img--4-i img {
     width: 100%;
     height: 200px;
     border-radius: 25px 25px 0px 0px;
   }
-  .resto .resto_img--1-ii, .resto .resto_img--2-ii, .resto .resto_img--3-ii, .resto .resto_img--4-ii {
+  .resto_img--1-ii, .resto_img--2-ii, .resto_img--3-ii, .resto_img--4-ii {
     display: flex;
     justify-content: space-between;
     width: 99%;
     height: 99px;
     border-radius: 0px 0px 25px 25px;
   }
-  .resto .resto_img--1-iii, .resto .resto_img--2-iii, .resto .resto_img--3-iii, .resto .resto_img--4-iii {
+  .resto_img--1-iii, .resto_img--2-iii, .resto_img--3-iii, .resto_img--4-iii {
     margin-left: 15px;
     line-height: 100%;
   }
-  .resto .resto_img--1-iiii, .resto .resto_img--2-iiii, .resto .resto_img--3-iiii, .resto .resto_img--4-iiii {
+  .resto_img--1-iiii, .resto_img--2-iiii, .resto_img--3-iiii, .resto_img--4-iiii {
     margin-top: 20px;
     margin-right: 20px;
     line-height: 100%;
   }
 
   .foot {
-    border: 0.1rem solid black;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -204,7 +227,11 @@
     padding-bottom: 60px;
     background-color: #353535;
     color: #fff;
-    line-height: 100%;
+    line-height: 30%;
+  }
+  .foot a {
+    text-decoration: none;
+    color: #fff;
   }
   .foot_log img {
     width: 30%;
@@ -218,16 +245,15 @@
     padding-left: 20px;
     align-items: center;
     margin-top: 0px;
+    line-height: 10%;
   }
   .foot_pro p, .foot_dev p {
-    margin-left: 10px;
-    font-size: 30px;
+    margin-left: 20px;
+    font-size: 20px;
   }
   .foot_mc {
-    display: flex;
-    flex-direction: column;
+    line-height: 50%;
     padding-left: 20px;
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

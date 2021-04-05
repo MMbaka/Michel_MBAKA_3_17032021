@@ -1,12 +1,4 @@
-$color-primary: #f6f6f6;
-$color-secondary: #eaeaea;
-$color-tertiary:#9356dc;
-$color-accent: black;
-$color-white: #fff;
-$color-shadow:#130f0f5b;
-$color-invalid: #e690c9;
-$color-footer:#353535;
-
+@import url(./sass/utils/_variables.scss);
 @mixin border($color:$color-accent) {
     border: .1rem solid $color;}
     
@@ -160,17 +152,42 @@ $color-footer:#353535;
         &_tit{
             margin-top: 60px;
             margin-left: 20px;
-            font-size: 30px;
+            font-size: 25px;
         }
-        .resto_img{
+        &_badg1{
+            width: 90px;
+            height: 25px;
+            text-align: center;
+            padding-top: 6px;
+            background-color: $color-badg;
+            position: relative;
+            left: 290px;
+            top: 50px;
+            color: $color-badgtext;
+            border-radius: 2px;
+        }
+        &_badg2{
+            width: 90px;
+            height: 25px;
+            text-align: center;
+            padding-top: 6px;
+            background-color: $color-badg;
+            position: relative;
+            left: 290px;
+            top: 340px;
+            color: $color-badgtext;
+            border-radius: 2px;
+        }
+
+        &_img{
             display: flex;
             flex-direction: column;
             width: 100%;
             height: auto;
             align-items: center;
             justify-content: space-around;
-            padding-top: 20px;
             padding-bottom: 80px;
+            margin-top:-40px ;
 
             &--1,&--2,&--3,&--4{
                 width: 90%;
@@ -211,7 +228,6 @@ $color-footer:#353535;
         }
     }
     .foot {
-        @include border;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -219,7 +235,11 @@ $color-footer:#353535;
         padding-bottom: 60px;
         background-color: $color-footer;
         color:$color-white ;
-        line-height: 100%;
+        line-height: 30%;
+        & a{
+            text-decoration: none;
+            color: $color-white;        
+        }
         &_log{
             & img{
                 width: 30%;
@@ -229,22 +249,21 @@ $color-footer:#353535;
                 margin-left: 20px;
             }
         }
-        &_pro,&_dev,{
+        &_pro,&_dev{
             display: flex;
             padding-left: 20px;
             align-items:center ;
             margin-top: 0px;
+            line-height: 10%;
             & p{
-              margin-left: 10px;
-              font-size: 30px;  
+              margin-left: 20px;
+              font-size: 20px; 
             }
         }
         &_mc{
-            display: flex;
-            flex-direction: column;
+            line-height: 50%;
             padding-left: 20px;
-            font-size: 30px;
-            margin-top: 0px;  
+            font-size: 20px;
         }
         
     }
