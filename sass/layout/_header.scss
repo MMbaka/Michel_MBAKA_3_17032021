@@ -14,7 +14,7 @@
                 }
             }
             &__geo {
-                background-color:$color-secondary ;
+                background-color: $color-secondary ;
                 -webkit-box-shadow: inset -1px 15px 8px -13px rgba(168,141,168,0.34);
                 -moz-box-shadow: inset -1px 15px 8px -13px rgba(168,141,168,0.34);
                 box-shadow: inset -1px 15px 8px -13px rgba(168,141,168,0.34);
@@ -67,11 +67,11 @@
                         -webkit-transition: all .1s;
                         float: left;
                         color: $color-white;
-                        &:active{
+                    &:active{
                         transform: translate(0, 5px);
                         -webkit-transform: translate(0, 5px);
                         border-bottom: 1px solid;
-                        }
+                    }
                 }
             }
         }
