@@ -1,8 +1,8 @@
-@import url(./sass/utils/_variables.scss);
-@import url(./sass/utils/_mixins.scss);
-@import url(./sass/layout/_header.scss);
-@import url(./sass/layout/_fonc.scss);
-@import url(./sass/layout/_resto.scss);
+@import url(./sass/utils/variables);
+@import url(./sass/utils/mixins);
+@import url(./sass/layout/header);
+@import url(./sass/layout/fonc);
+@import url(./sass/layout/resto);
 
 @media (max-width: 599px) {
     .foot {
