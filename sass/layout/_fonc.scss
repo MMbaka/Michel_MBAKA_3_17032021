@@ -1,0 +1,65 @@
+@media (max-width: 599px) {
+
+    .fonc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        &_tit{
+            margin-top: 50px;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+        &_op{
+            padding-top: 20px;
+            padding-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 350px;
+            &--choix,&--comp,&--degus{
+                background-color:$color-primary ;
+                width: 85%;
+                display: flex;
+                text-decoration: none;
+                align-items: center;
+                height: 30px;
+                padding: 30px 0px;
+                border-radius: 30px;
+                box-shadow: 0px 0px 15px  $color-shadow;
+                margin-top: 40px;
+
+                &-ix,&-ip,&-is{
+                    display: flex;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 35px;
+                    background-color: $color-tertiary;
+                    justify-content: center;
+                    align-items: center;
+                    color:$color-white;
+                    margin-left: -15px;
+                }
+                &-iix,&-iip,&-iis{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    padding-left: 30px;
+                    padding-right: 15px;
+                   
+                }
+                &-titx,&-titp,&-tits{
+                    display: flex;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 21px;
+                }
+
+
+            }
+        }
+    }
+}
