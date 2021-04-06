@@ -1,6 +1,90 @@
+@import url(./sass/base/base);
 @import url(./sass/utils/variables);
-@import url(./sass/utils/mixins);
-@import url(./sass/layout/header);
+@mixin border($color:$color-accent) {
+    border: .1rem solid $color;}
+
+@media (max-width: 599px) {
+    .hder {
+        @include border;
+        &__logo {
+            width: 100%;
+            height: 5rem;
+            text-align: center;
+            & img{
+                margin-top: 20px;
+                width: 230px;
+            }
+        }
+    }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+                &__geo {
+                    background-color: $color-secondary ;
+                    -webkit-box-shadow: inset -1px 15px 8px -13px rgba(168,141,168,0.34);
+                    -moz-box-shadow: inset -1px 15px 8px -13px rgba(168,141,168,0.34);
+                    box-shadow: inset -1px 15px 8px -13px rgba(168,141,168,0.34);
+                    width: 100%;
+                    height: 4.5rem;
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    &--i{
+                        margin-right: 15px;
+                    }
+                }
+                &__tit {
+                    background-color:$color-primary;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &--reserv {
+                        width: 80%;
+                        height: auto;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                    &--decouv {
+                        width: 90%;
+                        height: auto;
+                        text-align: center;
+                        margin-top: 0px;
+                        font-size: 23px;
+                    }
+                    &--btn {
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        justify-content: center;
+                        padding-bottom: 20px;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        &-action{
+                            background: linear-gradient(to top , $color-tertiary, $color-invalid 100%);                       
+                            text-decoration: none;
+                            height: 15px;
+                            padding: 18px 30px;
+                            border-radius: 25px;
+                            text-shadow: 0px 2px $color-accent;
+                            box-shadow: 0px 0px 10px  $color-shadow;
+                            transition: all .1s;
+                            -webkit-transition: all .1s;
+                            float: left;
+                            color: $color-white;
+                        &:active{
+                            transform: translate(0, 5px);
+                            -webkit-transform: translate(0, 5px);
+                            border-bottom: 1px solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
 @import url(./sass/layout/fonc);
 @import url(./sass/layout/resto);
 
@@ -11,7 +95,7 @@
         width: 100%;
         height: auto;
         padding-bottom: 60px;
-        background-color: $color-footer;
+        background-color: $color-foot;
         color:$color-white ;
         line-height: 30%;
         & a{
