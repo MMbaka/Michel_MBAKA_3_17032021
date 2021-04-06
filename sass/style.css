@@ -14,8 +14,7 @@
     margin-top: 20px;
     width: 230px;
   }
-}
-@media (max-width: 599px) {
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -86,8 +85,7 @@
     -webkit-transform: translate(0, 5px);
     border-bottom: 1px solid;
   }
-}
-@media (max-width: 599px) {
+
   .fonc {
     display: flex;
     flex-direction: column;
@@ -97,7 +95,7 @@
   .fonc_tit {
     margin-top: 50px;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 25px;
   }
   .fonc_op {
     padding-top: 20px;
@@ -146,8 +144,7 @@
     padding-right: 10px;
     font-size: 21px;
   }
-}
-@media (max-width: 599px) {
+
   .resto {
     /*Parametrage section restorant*/
     display: flex;
@@ -232,8 +229,7 @@
     margin-right: 20px;
     line-height: 100%;
   }
-}
-@media (max-width: 599px) {
+
   .foot {
     display: flex;
     flex-direction: column;

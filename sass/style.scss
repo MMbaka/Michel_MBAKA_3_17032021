@@ -59,8 +59,6 @@ $color-badgtext:#008766;
             }
         }
     }
-}               
-@media (max-width: 599px) {
     .nav {
         display: flex;
         flex-direction: column;
@@ -107,8 +105,6 @@ $color-badgtext:#008766;
             @include nav__tit--btn
         }
     }
-}
-@media (max-width: 599px) {
     .fonc{
     display: flex;
     flex-direction: column;
@@ -117,7 +113,7 @@ $color-badgtext:#008766;
     &_tit{
         margin-top: 50px;
         margin-left: 20px;
-        font-size: 30px;
+        font-size: 25px;
     }
     &_op{
         padding-top: 20px;
@@ -169,8 +165,6 @@ $color-badgtext:#008766;
             }
         }
     }
-}
-@media (max-width: 599px) {
     .resto{/*Parametrage section restorant*/
     display: flex;
     flex-direction: column;
@@ -251,14 +245,11 @@ $color-badgtext:#008766;
                     margin-right: 20px;
                     line-height: 100%;
                 }    
-
             }
         }
     }
 }
-}
 
-@media (max-width: 599px) {
     .foot {
         display: flex;
         flex-direction: column;
@@ -297,7 +288,6 @@ $color-badgtext:#008766;
             padding-left: 20px;
             font-size: 20px;
         }
-        
     }
 }
 
