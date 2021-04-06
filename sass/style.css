@@ -14,8 +14,10 @@
     margin-top: 20px;
     width: 230px;
   }
-  .nav__geo {
+  .hder__geo {
     background-color: #eaeaea;
+    -webkit-box-shadow: inset -1px 15px 8px -13px rgba(168, 141, 168, 0.34);
+    -moz-box-shadow: inset -1px 15px 8px -13px rgba(168, 141, 168, 0.34);
     box-shadow: inset -1px 15px 8px -13px rgba(168, 141, 168, 0.34);
     width: 100%;
     height: 4.5rem;
@@ -23,10 +25,10 @@
     display: flex;
     justify-content: center;
   }
-  .nav__geo--i {
+  .hder__geo--i {
     margin-right: 15px;
   }
-  .nav__tit {
+  .hder__tit {
     background-color: #f6f6f6;
     width: 100%;
     height: auto;
@@ -34,20 +36,20 @@
     flex-direction: column;
     align-items: center;
   }
-  .nav__tit--reserv {
+  .hder__tit--reserv {
     width: 80%;
     height: auto;
     text-align: center;
     font-size: 30px;
   }
-  .nav__tit--decouv {
+  .hder__tit--decouv {
     width: 90%;
     height: auto;
     text-align: center;
     margin-top: 0px;
     font-size: 23px;
   }
-  .nav__tit--btn {
+  .hder__tit--btn {
     display: flex;
     width: 100%;
     height: auto;
@@ -56,7 +58,7 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .nav__tit--btn .nav__tit--btn-action {
+  .hder__tit--btn .action-buton {
     background: linear-gradient(to top, #9356dc, #e690c9 100%);
     text-decoration: none;
     height: 15px;
@@ -69,12 +71,13 @@
     float: left;
     color: #fff;
   }
-  .nav__tit--btn .nav__tit--btn-action:active {
+  .hder__tit--btn .action-buton:active {
     transform: translate(0, 5px);
     -webkit-transform: translate(0, 5px);
     border-bottom: 1px solid;
   }
-
+}
+@media (max-width: 599px) {
   .fonc {
     display: flex;
     flex-direction: column;
@@ -133,7 +136,8 @@
     padding-right: 10px;
     font-size: 21px;
   }
-
+}
+@media (max-width: 599px) {
   .resto {
     /*Parametrage section restorant*/
     display: flex;
@@ -141,8 +145,7 @@
     width: 100%;
     height: auto;
     background-color: #f6f6f6;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .resto_tit {
     margin-top: 60px;
@@ -218,7 +221,8 @@
     margin-right: 20px;
     line-height: 100%;
   }
-
+}
+@media (max-width: 599px) {
   .foot {
     display: flex;
     flex-direction: column;
@@ -256,4 +260,6 @@
     padding-left: 20px;
     font-size: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
