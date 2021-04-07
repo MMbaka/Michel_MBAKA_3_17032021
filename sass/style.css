@@ -1,3 +1,8 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .hder {
   display: flex;
   flex-direction: column;
@@ -249,6 +254,7 @@
   color: #fff;
   margin-top: 20px;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 .foot_pro, .foot_dev {
   display: flex;
