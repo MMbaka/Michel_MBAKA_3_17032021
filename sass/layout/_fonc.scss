@@ -1,5 +1,4 @@
-@media (max-width: 599px) {
-    .fonc{
+.fonc{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,7 +6,7 @@
     &_tit{
         margin-top: 50px;
         margin-left: 20px;
-        font-size: 30px;
+        font-size: 25px;
     }
     &_op{
         padding-top: 20px;
@@ -59,4 +58,3 @@
             }
         }
     }
-}
