@@ -151,6 +151,124 @@ body, html {
   font-size: 21px;
 }
 
+.imgarp {
+  width: 100%;
+  height: auto;
+}
+.imgarp img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: 250px;
+  z-index: 2;
+}
+.menu_tit {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 25px 20px;
+}
+.menu_tit--i {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+.menu_ent {
+  border: 0.1rem solid black;
+  width: 90%;
+  height: auto;
+  margin: 25px 20px;
+}
+.menu_ent--tit {
+  border: 0.1rem solid black;
+}
+.menu_ent--lst {
+  border: 0.1rem solid black;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.menu_ent--lst-1 {
+  box-shadow: 0px 0px 5px #130f0f5b;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.menu_ent--lst-1i {
+  line-height: 80%;
+  width: auto;
+  margin-left: 10px;
+}
+.menu_ent--lst-1ii {
+  margin-top: 50px;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu_ent--lst-2 {
+  box-shadow: 0px 0px 5px #130f0f5b;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.menu_ent--lst-2i {
+  line-height: 80%;
+  width: auto;
+  margin-left: 10px;
+}
+.menu_ent--lst-2ii {
+  margin-top: 50px;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu_ent--lst-3 {
+  box-shadow: 0px 0px 5px #130f0f5b;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.menu_ent--lst-3i {
+  line-height: 100%;
+  width: auto;
+  margin-left: 10px;
+}
+.menu_ent--lst-3ii {
+  margin-top: 55px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu_ent--lst-3iii {
+  width: 70px;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #99e2d0;
+}
+
 .resto {
   /*Parametrage section restorant*/
   display: flex;
