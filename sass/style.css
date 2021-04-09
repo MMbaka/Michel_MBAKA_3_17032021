@@ -189,9 +189,6 @@ body, html {
   height: auto;
   margin: 25px 20px;
 }
-.menu_ent--tit {
-  border: 0.1rem solid black;
-}
 .menu_ent--lst {
   border: 0.1rem solid black;
   width: 100%;
