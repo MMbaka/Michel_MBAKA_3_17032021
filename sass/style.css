@@ -293,6 +293,35 @@ body, html {
   padding-top: 30px;
   background-color: #99e2d0;
 }
+.mnu_ent--lst-4, .mnu_ent_plat-4, .mnu_plat--lst-4, .mnu_plat_plat-4, .mnu_dess--lst-4, .mnu_dess_plat-4 {
+  box-shadow: 0px 0px 5px #130f0f5b;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+}
+.mnu_ent--lst-4i:nth-child(1), .mnu_ent_plat-4i:nth-child(1), .mnu_plat--lst-4i:nth-child(1), .mnu_plat_plat-4i:nth-child(1), .mnu_dess--lst-4i:nth-child(1), .mnu_dess_plat-4i:nth-child(1) {
+  flex: 3;
+  line-height: 100%;
+  margin-left: 10px;
+}
+.mnu_ent--lst-4ii:nth-child(2), .mnu_ent_plat-4ii:nth-child(2), .mnu_plat--lst-4ii:nth-child(2), .mnu_plat_plat-4ii:nth-child(2), .mnu_dess--lst-4ii:nth-child(2), .mnu_dess_plat-4ii:nth-child(2) {
+  margin-top: 55px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.mnu_ent--lst-4iii:nth-child(3), .mnu_ent_plat-4iii:nth-child(3), .mnu_plat--lst-4iii:nth-child(3), .mnu_plat_plat-4iii:nth-child(3), .mnu_dess--lst-4iii:nth-child(3), .mnu_dess_plat-4iii:nth-child(3) {
+  flex: 1;
+  width: 70px;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #99e2d0;
+}
 
 .resto {
   /*Parametrage section restorant*/
