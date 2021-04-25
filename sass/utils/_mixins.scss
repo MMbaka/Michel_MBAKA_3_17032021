@@ -10,7 +10,8 @@
         justify-content: center;
         padding-bottom: 60px;
         padding-top: 20px;
-        &-action{
+        transition: transform 450ms, 300ms 150ms;
+            &-action{
             background: linear-gradient(to top , $color-tertiary, $color-invalid 100%);                       
             text-decoration: none;
             height: 20px;
@@ -29,6 +30,7 @@
             -webkit-transform: translate(0, 5px);
             border-bottom: 1px solid;
         }
+        @include hover;
     }
 }
 }
@@ -62,6 +64,8 @@
     height: auto;
     display: flex;
     margin-top: 20px;
+    transition: transform 450ms, 300ms 150ms;
+    @include hover;
     &i:nth-child(1){
         flex: 3;
         line-height: 100%;
@@ -122,6 +126,12 @@
         line-height: 50%;
         padding-left: 20px;
         font-size: 20px;
+    }
+}
+
+@mixin hover {
+    &:hover {
+        transform: scale(1.05);
     }
 }
 

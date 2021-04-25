@@ -10,7 +10,7 @@
         margin-left: 20px;
         font-size: 25px;
     }
-    &_badg1{
+    &_badg1,&_badg2{
         width: 90px;
         height: 25px;
         text-align: center;
@@ -23,16 +23,7 @@
         border-radius: 2px;
     }
     &_badg2{
-        width: 90px;
-        height: 25px;
-        text-align: center;
-        padding-top: 6px;
-        background-color: $color-badg;
-        position: relative;
-        left: 300px;
         top: 340px;
-        color: $color-badgtext;
-        border-radius: 2px;
     }
 
     &_img{

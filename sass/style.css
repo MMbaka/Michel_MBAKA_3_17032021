@@ -72,6 +72,7 @@ body, html {
   justify-content: center;
   padding-bottom: 60px;
   padding-top: 20px;
+  transition: transform 450ms, 300ms 150ms;
 }
 .nav__tit--btn-action {
   background: linear-gradient(to top, #9356dc, #e690c9 100%);
@@ -92,6 +93,9 @@ body, html {
   transform: translate(0, 5px);
   -webkit-transform: translate(0, 5px);
   border-bottom: 1px solid;
+}
+.nav__tit--btn-action:hover {
+  transform: scale(1.05);
 }
 
 .fonc {
@@ -126,6 +130,10 @@ body, html {
   border-radius: 30px;
   box-shadow: 0px 0px 15px #130f0f5b;
   margin-top: 40px;
+  transition: transform 450ms, 300ms 150ms;
+}
+.fonc_op--choix:hover, .fonc_op--comp:hover, .fonc_op--degus:hover {
+  transform: scale(1.05);
 }
 .fonc_op--choix-ix, .fonc_op--choix-ip, .fonc_op--choix-is, .fonc_op--comp-ix, .fonc_op--comp-ip, .fonc_op--comp-is, .fonc_op--degus-ix, .fonc_op--degus-ip, .fonc_op--degus-is {
   display: flex;
@@ -214,6 +222,10 @@ body, html {
   height: auto;
   display: flex;
   margin-top: 20px;
+  transition: transform 450ms, 300ms 150ms;
+}
+.mnu_ent--lst-1:hover, .mnu_ent_plat-1:hover, .mnu_plat--lst-1:hover, .mnu_plat_plat-1:hover, .mnu_dess--lst-1:hover, .mnu_dess_plat-1:hover {
+  transform: scale(1.05);
 }
 .mnu_ent--lst-1i:nth-child(1), .mnu_ent_plat-1i:nth-child(1), .mnu_plat--lst-1i:nth-child(1), .mnu_plat_plat-1i:nth-child(1), .mnu_dess--lst-1i:nth-child(1), .mnu_dess_plat-1i:nth-child(1) {
   flex: 3;
@@ -243,6 +255,10 @@ body, html {
   height: auto;
   display: flex;
   margin-top: 20px;
+  transition: transform 450ms, 300ms 150ms;
+}
+.mnu_ent--lst-2:hover, .mnu_ent_plat-2:hover, .mnu_plat--lst-2:hover, .mnu_plat_plat-2:hover, .mnu_dess--lst-2:hover, .mnu_dess_plat-2:hover {
+  transform: scale(1.05);
 }
 .mnu_ent--lst-2i:nth-child(1), .mnu_ent_plat-2i:nth-child(1), .mnu_plat--lst-2i:nth-child(1), .mnu_plat_plat-2i:nth-child(1), .mnu_dess--lst-2i:nth-child(1), .mnu_dess_plat-2i:nth-child(1) {
   flex: 3;
@@ -272,6 +288,10 @@ body, html {
   height: auto;
   display: flex;
   margin-top: 20px;
+  transition: transform 450ms, 300ms 150ms;
+}
+.mnu_ent--lst-3:hover, .mnu_ent_plat-3:hover, .mnu_plat--lst-3:hover, .mnu_plat_plat-3:hover, .mnu_dess--lst-3:hover, .mnu_dess_plat-3:hover {
+  transform: scale(1.05);
 }
 .mnu_ent--lst-3i:nth-child(1), .mnu_ent_plat-3i:nth-child(1), .mnu_plat--lst-3i:nth-child(1), .mnu_plat_plat-3i:nth-child(1), .mnu_dess--lst-3i:nth-child(1), .mnu_dess_plat-3i:nth-child(1) {
   flex: 3;
@@ -301,6 +321,10 @@ body, html {
   height: auto;
   display: flex;
   margin-top: 20px;
+  transition: transform 450ms, 300ms 150ms;
+}
+.mnu_ent--lst-4:hover, .mnu_ent_plat-4:hover, .mnu_plat--lst-4:hover, .mnu_plat_plat-4:hover, .mnu_dess--lst-4:hover, .mnu_dess_plat-4:hover {
+  transform: scale(1.05);
 }
 .mnu_ent--lst-4i:nth-child(1), .mnu_ent_plat-4i:nth-child(1), .mnu_plat--lst-4i:nth-child(1), .mnu_plat_plat-4i:nth-child(1), .mnu_dess--lst-4i:nth-child(1), .mnu_dess_plat-4i:nth-child(1) {
   flex: 3;
@@ -337,7 +361,7 @@ body, html {
   margin-left: 20px;
   font-size: 25px;
 }
-.resto_badg1 {
+.resto_badg1, .resto_badg2 {
   width: 90px;
   height: 25px;
   text-align: center;
@@ -350,16 +374,7 @@ body, html {
   border-radius: 2px;
 }
 .resto_badg2 {
-  width: 90px;
-  height: 25px;
-  text-align: center;
-  padding-top: 6px;
-  background-color: #99e2d0;
-  position: relative;
-  left: 300px;
   top: 340px;
-  color: #008766;
-  border-radius: 2px;
 }
 .resto_img {
   display: flex;
