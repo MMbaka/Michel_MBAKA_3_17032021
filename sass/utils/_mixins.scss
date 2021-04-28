@@ -4,6 +4,7 @@
 
 @mixin btn{
     &--btn {
+        @include hover;
         display: flex;
         width: 100%;
         height: auto;
@@ -30,7 +31,6 @@
             -webkit-transform: translate(0, 5px);
             border-bottom: 1px solid;
         }
-        @include hover;
     }
 }
 }
@@ -64,29 +64,30 @@
     height: auto;
     display: flex;
     margin-top: 20px;
-    transition: transform 450ms, 300ms 150ms;
-    @include hover;
     &i:nth-child(1){
+        @include border;
+        text-decoration: none;
         flex: 3;
         line-height: 100%;
         margin-left: 10px;
+        overflow: auto;
     }
     &ii:nth-child(2){
+        @include border;
         margin-top: 55px;
         margin-left: 30px;
         font-weight: bold;
         font-size: 20px;
         margin-right: 20px;
     }
-    &iii:nth-child(3){
-        flex: 1;
-        width: 70px;
-        border-radius: 0px 20px 20px 0px;
-        text-align: center;
-        padding-top: 30px;
-        background-color:$color-badg ;
+    @include hover;
+    &iii{
+        @include border;
+        transform: scaleX(0);
     }
+
 }
+
 
 @mixin foot {
     display: flex;
@@ -131,9 +132,22 @@
 
 @mixin hover {
     &:hover {
-        transform: scale(1.05);
+       & + &iii{
+            @include border;
+            flex: 1;
+            width: 90px;
+            border-radius: 0px 20px 20px 0px;
+            text-align: center;
+            padding-top: 35px;
+            background-color:$color-badg ;
+            display: block;
+        }
     }
 }
 
-    
+@mixin valid {
+    &:hover {
+        transform: scaleX(1);
+    }
+}
 
