@@ -307,160 +307,325 @@ body, html {
   box-shadow: 0px 0px 5px #130f0f5b;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 75px;
   display: flex;
   margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  animation: anim 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
-.mnu_ent--lst-1i:nth-child(1), .mnu_ent_plat-1i:nth-child(1), .mnu_plat--lst-1i:nth-child(1), .mnu_plat_plat-1i:nth-child(1), .mnu_dess--lst-1i:nth-child(1), .mnu_dess_plat-1i:nth-child(1) {
-  border: 0.1rem solid black;
-  text-decoration: none;
-  flex: 3;
+.mnu_ent--lst-1i, .mnu_ent_plat-1i, .mnu_plat--lst-1i, .mnu_plat_plat-1i, .mnu_dess--lst-1i, .mnu_dess_plat-1i {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
   line-height: 100%;
   margin-left: 10px;
   overflow: auto;
 }
-.mnu_ent--lst-1ii:nth-child(2), .mnu_ent_plat-1ii:nth-child(2), .mnu_plat--lst-1ii:nth-child(2), .mnu_plat_plat-1ii:nth-child(2), .mnu_dess--lst-1ii:nth-child(2), .mnu_dess_plat-1ii:nth-child(2) {
-  border: 0.1rem solid black;
-  margin-top: 55px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 20px;
+.mnu_ent--lst-1i_1, .mnu_ent_plat-1i_1, .mnu_plat--lst-1i_1, .mnu_plat_plat-1i_1, .mnu_dess--lst-1i_1, .mnu_dess_plat-1i_1 {
+  margin: 0.8rem 1rem 1rem 0rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.mnu_ent--lst-1:hover + .mnu_ent--lst-1:hoveriii, .mnu_ent--lst-1:hover + .mnu_ent_plat-1:hoveriii, .mnu_ent--lst-1:hover + .mnu_plat--lst-1:hoveriii, .mnu_ent--lst-1:hover + .mnu_plat_plat-1:hoveriii, .mnu_ent--lst-1:hover + .mnu_dess--lst-1:hoveriii, .mnu_ent--lst-1:hover + .mnu_dess_plat-1:hoveriii, .mnu_ent_plat-1:hover + .mnu_ent--lst-1:hoveriii, .mnu_ent_plat-1:hover + .mnu_ent_plat-1:hoveriii, .mnu_ent_plat-1:hover + .mnu_plat--lst-1:hoveriii, .mnu_ent_plat-1:hover + .mnu_plat_plat-1:hoveriii, .mnu_ent_plat-1:hover + .mnu_dess--lst-1:hoveriii, .mnu_ent_plat-1:hover + .mnu_dess_plat-1:hoveriii, .mnu_plat--lst-1:hover + .mnu_ent--lst-1:hoveriii, .mnu_plat--lst-1:hover + .mnu_ent_plat-1:hoveriii, .mnu_plat--lst-1:hover + .mnu_plat--lst-1:hoveriii, .mnu_plat--lst-1:hover + .mnu_plat_plat-1:hoveriii, .mnu_plat--lst-1:hover + .mnu_dess--lst-1:hoveriii, .mnu_plat--lst-1:hover + .mnu_dess_plat-1:hoveriii, .mnu_plat_plat-1:hover + .mnu_ent--lst-1:hoveriii, .mnu_plat_plat-1:hover + .mnu_ent_plat-1:hoveriii, .mnu_plat_plat-1:hover + .mnu_plat--lst-1:hoveriii, .mnu_plat_plat-1:hover + .mnu_plat_plat-1:hoveriii, .mnu_plat_plat-1:hover + .mnu_dess--lst-1:hoveriii, .mnu_plat_plat-1:hover + .mnu_dess_plat-1:hoveriii, .mnu_dess--lst-1:hover + .mnu_ent--lst-1:hoveriii, .mnu_dess--lst-1:hover + .mnu_ent_plat-1:hoveriii, .mnu_dess--lst-1:hover + .mnu_plat--lst-1:hoveriii, .mnu_dess--lst-1:hover + .mnu_plat_plat-1:hoveriii, .mnu_dess--lst-1:hover + .mnu_dess--lst-1:hoveriii, .mnu_dess--lst-1:hover + .mnu_dess_plat-1:hoveriii, .mnu_dess_plat-1:hover + .mnu_ent--lst-1:hoveriii, .mnu_dess_plat-1:hover + .mnu_ent_plat-1:hoveriii, .mnu_dess_plat-1:hover + .mnu_plat--lst-1:hoveriii, .mnu_dess_plat-1:hover + .mnu_plat_plat-1:hoveriii, .mnu_dess_plat-1:hover + .mnu_dess--lst-1:hoveriii, .mnu_dess_plat-1:hover + .mnu_dess_plat-1:hoveriii {
-  border: 0.1rem solid black;
-  flex: 1;
-  width: 90px;
-  border-radius: 0px 20px 20px 0px;
-  text-align: center;
-  padding-top: 35px;
-  background-color: #99e2d0;
-  display: block;
+.mnu_ent--lst-1i_2, .mnu_ent_plat-1i_2, .mnu_plat--lst-1i_2, .mnu_plat_plat-1i_2, .mnu_dess--lst-1i_2, .mnu_dess_plat-1i_2 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 20px;
+}
+.mnu_ent--lst-1ii, .mnu_ent_plat-1ii, .mnu_plat--lst-1ii, .mnu_plat_plat-1ii, .mnu_dess--lst-1ii, .mnu_dess_plat-1ii {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 0.8rem;
 }
 .mnu_ent--lst-1iii, .mnu_ent_plat-1iii, .mnu_plat--lst-1iii, .mnu_plat_plat-1iii, .mnu_dess--lst-1iii, .mnu_dess_plat-1iii {
-  border: 0.1rem solid black;
-  transform: scaleX(0);
+  background-color: #99e2d0;
+  margin: -1em -5.5rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-1iii_v, .mnu_ent_plat-1iii_v, .mnu_plat--lst-1iii_v, .mnu_plat_plat-1iii_v, .mnu_dess--lst-1iii_v, .mnu_dess_plat-1iii_v {
+  height: 2rem;
+  width: 2rem;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-1iii_v_1, .mnu_ent_plat-1iii_v_1, .mnu_plat--lst-1iii_v_1, .mnu_plat_plat-1iii_v_1, .mnu_dess--lst-1iii_v_1, .mnu_dess_plat-1iii_v_1 {
+  color: #99e2d0;
+}
+.mnu_ent--lst-1iii:hover .mnu_ent--lst-1iii_v, .mnu_ent--lst-1iii:hover .mnu_ent_plat-1iii_v, .mnu_ent--lst-1iii:hover .mnu_plat--lst-1iii_v, .mnu_ent--lst-1iii:hover .mnu_plat_plat-1iii_v, .mnu_ent--lst-1iii:hover .mnu_dess--lst-1iii_v, .mnu_ent--lst-1iii:hover .mnu_dess_plat-1iii_v, .mnu_ent_plat-1iii:hover .mnu_ent--lst-1iii_v, .mnu_ent_plat-1iii:hover .mnu_ent_plat-1iii_v, .mnu_ent_plat-1iii:hover .mnu_plat--lst-1iii_v, .mnu_ent_plat-1iii:hover .mnu_plat_plat-1iii_v, .mnu_ent_plat-1iii:hover .mnu_dess--lst-1iii_v, .mnu_ent_plat-1iii:hover .mnu_dess_plat-1iii_v, .mnu_plat--lst-1iii:hover .mnu_ent--lst-1iii_v, .mnu_plat--lst-1iii:hover .mnu_ent_plat-1iii_v, .mnu_plat--lst-1iii:hover .mnu_plat--lst-1iii_v, .mnu_plat--lst-1iii:hover .mnu_plat_plat-1iii_v, .mnu_plat--lst-1iii:hover .mnu_dess--lst-1iii_v, .mnu_plat--lst-1iii:hover .mnu_dess_plat-1iii_v, .mnu_plat_plat-1iii:hover .mnu_ent--lst-1iii_v, .mnu_plat_plat-1iii:hover .mnu_ent_plat-1iii_v, .mnu_plat_plat-1iii:hover .mnu_plat--lst-1iii_v, .mnu_plat_plat-1iii:hover .mnu_plat_plat-1iii_v, .mnu_plat_plat-1iii:hover .mnu_dess--lst-1iii_v, .mnu_plat_plat-1iii:hover .mnu_dess_plat-1iii_v, .mnu_dess--lst-1iii:hover .mnu_ent--lst-1iii_v, .mnu_dess--lst-1iii:hover .mnu_ent_plat-1iii_v, .mnu_dess--lst-1iii:hover .mnu_plat--lst-1iii_v, .mnu_dess--lst-1iii:hover .mnu_plat_plat-1iii_v, .mnu_dess--lst-1iii:hover .mnu_dess--lst-1iii_v, .mnu_dess--lst-1iii:hover .mnu_dess_plat-1iii_v, .mnu_dess_plat-1iii:hover .mnu_ent--lst-1iii_v, .mnu_dess_plat-1iii:hover .mnu_ent_plat-1iii_v, .mnu_dess_plat-1iii:hover .mnu_plat--lst-1iii_v, .mnu_dess_plat-1iii:hover .mnu_plat_plat-1iii_v, .mnu_dess_plat-1iii:hover .mnu_dess--lst-1iii_v, .mnu_dess_plat-1iii:hover .mnu_dess_plat-1iii_v {
+  transform: rotate(0);
+}
+.mnu_ent--lst-1:hover .mnu_ent--lst-1iii, .mnu_ent--lst-1:hover .mnu_ent_plat-1iii, .mnu_ent--lst-1:hover .mnu_plat--lst-1iii, .mnu_ent--lst-1:hover .mnu_plat_plat-1iii, .mnu_ent--lst-1:hover .mnu_dess--lst-1iii, .mnu_ent--lst-1:hover .mnu_dess_plat-1iii, .mnu_ent_plat-1:hover .mnu_ent--lst-1iii, .mnu_ent_plat-1:hover .mnu_ent_plat-1iii, .mnu_ent_plat-1:hover .mnu_plat--lst-1iii, .mnu_ent_plat-1:hover .mnu_plat_plat-1iii, .mnu_ent_plat-1:hover .mnu_dess--lst-1iii, .mnu_ent_plat-1:hover .mnu_dess_plat-1iii, .mnu_plat--lst-1:hover .mnu_ent--lst-1iii, .mnu_plat--lst-1:hover .mnu_ent_plat-1iii, .mnu_plat--lst-1:hover .mnu_plat--lst-1iii, .mnu_plat--lst-1:hover .mnu_plat_plat-1iii, .mnu_plat--lst-1:hover .mnu_dess--lst-1iii, .mnu_plat--lst-1:hover .mnu_dess_plat-1iii, .mnu_plat_plat-1:hover .mnu_ent--lst-1iii, .mnu_plat_plat-1:hover .mnu_ent_plat-1iii, .mnu_plat_plat-1:hover .mnu_plat--lst-1iii, .mnu_plat_plat-1:hover .mnu_plat_plat-1iii, .mnu_plat_plat-1:hover .mnu_dess--lst-1iii, .mnu_plat_plat-1:hover .mnu_dess_plat-1iii, .mnu_dess--lst-1:hover .mnu_ent--lst-1iii, .mnu_dess--lst-1:hover .mnu_ent_plat-1iii, .mnu_dess--lst-1:hover .mnu_plat--lst-1iii, .mnu_dess--lst-1:hover .mnu_plat_plat-1iii, .mnu_dess--lst-1:hover .mnu_dess--lst-1iii, .mnu_dess--lst-1:hover .mnu_dess_plat-1iii, .mnu_dess_plat-1:hover .mnu_ent--lst-1iii, .mnu_dess_plat-1:hover .mnu_ent_plat-1iii, .mnu_dess_plat-1:hover .mnu_plat--lst-1iii, .mnu_dess_plat-1:hover .mnu_plat_plat-1iii, .mnu_dess_plat-1:hover .mnu_dess--lst-1iii, .mnu_dess_plat-1:hover .mnu_dess_plat-1iii {
+  margin-right: 0rem;
+}
+@keyframes anim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .mnu_ent--lst-2, .mnu_ent_plat-2, .mnu_plat--lst-2, .mnu_plat_plat-2, .mnu_dess--lst-2, .mnu_dess_plat-2 {
   box-shadow: 0px 0px 5px #130f0f5b;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 75px;
   display: flex;
   margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  animation: anim 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
-.mnu_ent--lst-2i:nth-child(1), .mnu_ent_plat-2i:nth-child(1), .mnu_plat--lst-2i:nth-child(1), .mnu_plat_plat-2i:nth-child(1), .mnu_dess--lst-2i:nth-child(1), .mnu_dess_plat-2i:nth-child(1) {
-  border: 0.1rem solid black;
-  text-decoration: none;
-  flex: 3;
+.mnu_ent--lst-2i, .mnu_ent_plat-2i, .mnu_plat--lst-2i, .mnu_plat_plat-2i, .mnu_dess--lst-2i, .mnu_dess_plat-2i {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
   line-height: 100%;
   margin-left: 10px;
   overflow: auto;
 }
-.mnu_ent--lst-2ii:nth-child(2), .mnu_ent_plat-2ii:nth-child(2), .mnu_plat--lst-2ii:nth-child(2), .mnu_plat_plat-2ii:nth-child(2), .mnu_dess--lst-2ii:nth-child(2), .mnu_dess_plat-2ii:nth-child(2) {
-  border: 0.1rem solid black;
-  margin-top: 55px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 20px;
+.mnu_ent--lst-2i_1, .mnu_ent_plat-2i_1, .mnu_plat--lst-2i_1, .mnu_plat_plat-2i_1, .mnu_dess--lst-2i_1, .mnu_dess_plat-2i_1 {
+  margin: 0.8rem 1rem 1rem 0rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.mnu_ent--lst-2:hover + .mnu_ent--lst-2:hoveriii, .mnu_ent--lst-2:hover + .mnu_ent_plat-2:hoveriii, .mnu_ent--lst-2:hover + .mnu_plat--lst-2:hoveriii, .mnu_ent--lst-2:hover + .mnu_plat_plat-2:hoveriii, .mnu_ent--lst-2:hover + .mnu_dess--lst-2:hoveriii, .mnu_ent--lst-2:hover + .mnu_dess_plat-2:hoveriii, .mnu_ent_plat-2:hover + .mnu_ent--lst-2:hoveriii, .mnu_ent_plat-2:hover + .mnu_ent_plat-2:hoveriii, .mnu_ent_plat-2:hover + .mnu_plat--lst-2:hoveriii, .mnu_ent_plat-2:hover + .mnu_plat_plat-2:hoveriii, .mnu_ent_plat-2:hover + .mnu_dess--lst-2:hoveriii, .mnu_ent_plat-2:hover + .mnu_dess_plat-2:hoveriii, .mnu_plat--lst-2:hover + .mnu_ent--lst-2:hoveriii, .mnu_plat--lst-2:hover + .mnu_ent_plat-2:hoveriii, .mnu_plat--lst-2:hover + .mnu_plat--lst-2:hoveriii, .mnu_plat--lst-2:hover + .mnu_plat_plat-2:hoveriii, .mnu_plat--lst-2:hover + .mnu_dess--lst-2:hoveriii, .mnu_plat--lst-2:hover + .mnu_dess_plat-2:hoveriii, .mnu_plat_plat-2:hover + .mnu_ent--lst-2:hoveriii, .mnu_plat_plat-2:hover + .mnu_ent_plat-2:hoveriii, .mnu_plat_plat-2:hover + .mnu_plat--lst-2:hoveriii, .mnu_plat_plat-2:hover + .mnu_plat_plat-2:hoveriii, .mnu_plat_plat-2:hover + .mnu_dess--lst-2:hoveriii, .mnu_plat_plat-2:hover + .mnu_dess_plat-2:hoveriii, .mnu_dess--lst-2:hover + .mnu_ent--lst-2:hoveriii, .mnu_dess--lst-2:hover + .mnu_ent_plat-2:hoveriii, .mnu_dess--lst-2:hover + .mnu_plat--lst-2:hoveriii, .mnu_dess--lst-2:hover + .mnu_plat_plat-2:hoveriii, .mnu_dess--lst-2:hover + .mnu_dess--lst-2:hoveriii, .mnu_dess--lst-2:hover + .mnu_dess_plat-2:hoveriii, .mnu_dess_plat-2:hover + .mnu_ent--lst-2:hoveriii, .mnu_dess_plat-2:hover + .mnu_ent_plat-2:hoveriii, .mnu_dess_plat-2:hover + .mnu_plat--lst-2:hoveriii, .mnu_dess_plat-2:hover + .mnu_plat_plat-2:hoveriii, .mnu_dess_plat-2:hover + .mnu_dess--lst-2:hoveriii, .mnu_dess_plat-2:hover + .mnu_dess_plat-2:hoveriii {
-  border: 0.1rem solid black;
-  flex: 1;
-  width: 90px;
-  border-radius: 0px 20px 20px 0px;
-  text-align: center;
-  padding-top: 35px;
-  background-color: #99e2d0;
-  display: block;
+.mnu_ent--lst-2i_2, .mnu_ent_plat-2i_2, .mnu_plat--lst-2i_2, .mnu_plat_plat-2i_2, .mnu_dess--lst-2i_2, .mnu_dess_plat-2i_2 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 20px;
+}
+.mnu_ent--lst-2ii, .mnu_ent_plat-2ii, .mnu_plat--lst-2ii, .mnu_plat_plat-2ii, .mnu_dess--lst-2ii, .mnu_dess_plat-2ii {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 0.8rem;
 }
 .mnu_ent--lst-2iii, .mnu_ent_plat-2iii, .mnu_plat--lst-2iii, .mnu_plat_plat-2iii, .mnu_dess--lst-2iii, .mnu_dess_plat-2iii {
-  border: 0.1rem solid black;
-  transform: scaleX(0);
+  background-color: #99e2d0;
+  margin: -1em -5.5rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-2iii_v, .mnu_ent_plat-2iii_v, .mnu_plat--lst-2iii_v, .mnu_plat_plat-2iii_v, .mnu_dess--lst-2iii_v, .mnu_dess_plat-2iii_v {
+  height: 2rem;
+  width: 2rem;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-2iii_v_1, .mnu_ent_plat-2iii_v_1, .mnu_plat--lst-2iii_v_1, .mnu_plat_plat-2iii_v_1, .mnu_dess--lst-2iii_v_1, .mnu_dess_plat-2iii_v_1 {
+  color: #99e2d0;
+}
+.mnu_ent--lst-2iii:hover .mnu_ent--lst-2iii_v, .mnu_ent--lst-2iii:hover .mnu_ent_plat-2iii_v, .mnu_ent--lst-2iii:hover .mnu_plat--lst-2iii_v, .mnu_ent--lst-2iii:hover .mnu_plat_plat-2iii_v, .mnu_ent--lst-2iii:hover .mnu_dess--lst-2iii_v, .mnu_ent--lst-2iii:hover .mnu_dess_plat-2iii_v, .mnu_ent_plat-2iii:hover .mnu_ent--lst-2iii_v, .mnu_ent_plat-2iii:hover .mnu_ent_plat-2iii_v, .mnu_ent_plat-2iii:hover .mnu_plat--lst-2iii_v, .mnu_ent_plat-2iii:hover .mnu_plat_plat-2iii_v, .mnu_ent_plat-2iii:hover .mnu_dess--lst-2iii_v, .mnu_ent_plat-2iii:hover .mnu_dess_plat-2iii_v, .mnu_plat--lst-2iii:hover .mnu_ent--lst-2iii_v, .mnu_plat--lst-2iii:hover .mnu_ent_plat-2iii_v, .mnu_plat--lst-2iii:hover .mnu_plat--lst-2iii_v, .mnu_plat--lst-2iii:hover .mnu_plat_plat-2iii_v, .mnu_plat--lst-2iii:hover .mnu_dess--lst-2iii_v, .mnu_plat--lst-2iii:hover .mnu_dess_plat-2iii_v, .mnu_plat_plat-2iii:hover .mnu_ent--lst-2iii_v, .mnu_plat_plat-2iii:hover .mnu_ent_plat-2iii_v, .mnu_plat_plat-2iii:hover .mnu_plat--lst-2iii_v, .mnu_plat_plat-2iii:hover .mnu_plat_plat-2iii_v, .mnu_plat_plat-2iii:hover .mnu_dess--lst-2iii_v, .mnu_plat_plat-2iii:hover .mnu_dess_plat-2iii_v, .mnu_dess--lst-2iii:hover .mnu_ent--lst-2iii_v, .mnu_dess--lst-2iii:hover .mnu_ent_plat-2iii_v, .mnu_dess--lst-2iii:hover .mnu_plat--lst-2iii_v, .mnu_dess--lst-2iii:hover .mnu_plat_plat-2iii_v, .mnu_dess--lst-2iii:hover .mnu_dess--lst-2iii_v, .mnu_dess--lst-2iii:hover .mnu_dess_plat-2iii_v, .mnu_dess_plat-2iii:hover .mnu_ent--lst-2iii_v, .mnu_dess_plat-2iii:hover .mnu_ent_plat-2iii_v, .mnu_dess_plat-2iii:hover .mnu_plat--lst-2iii_v, .mnu_dess_plat-2iii:hover .mnu_plat_plat-2iii_v, .mnu_dess_plat-2iii:hover .mnu_dess--lst-2iii_v, .mnu_dess_plat-2iii:hover .mnu_dess_plat-2iii_v {
+  transform: rotate(0);
+}
+.mnu_ent--lst-2:hover .mnu_ent--lst-2iii, .mnu_ent--lst-2:hover .mnu_ent_plat-2iii, .mnu_ent--lst-2:hover .mnu_plat--lst-2iii, .mnu_ent--lst-2:hover .mnu_plat_plat-2iii, .mnu_ent--lst-2:hover .mnu_dess--lst-2iii, .mnu_ent--lst-2:hover .mnu_dess_plat-2iii, .mnu_ent_plat-2:hover .mnu_ent--lst-2iii, .mnu_ent_plat-2:hover .mnu_ent_plat-2iii, .mnu_ent_plat-2:hover .mnu_plat--lst-2iii, .mnu_ent_plat-2:hover .mnu_plat_plat-2iii, .mnu_ent_plat-2:hover .mnu_dess--lst-2iii, .mnu_ent_plat-2:hover .mnu_dess_plat-2iii, .mnu_plat--lst-2:hover .mnu_ent--lst-2iii, .mnu_plat--lst-2:hover .mnu_ent_plat-2iii, .mnu_plat--lst-2:hover .mnu_plat--lst-2iii, .mnu_plat--lst-2:hover .mnu_plat_plat-2iii, .mnu_plat--lst-2:hover .mnu_dess--lst-2iii, .mnu_plat--lst-2:hover .mnu_dess_plat-2iii, .mnu_plat_plat-2:hover .mnu_ent--lst-2iii, .mnu_plat_plat-2:hover .mnu_ent_plat-2iii, .mnu_plat_plat-2:hover .mnu_plat--lst-2iii, .mnu_plat_plat-2:hover .mnu_plat_plat-2iii, .mnu_plat_plat-2:hover .mnu_dess--lst-2iii, .mnu_plat_plat-2:hover .mnu_dess_plat-2iii, .mnu_dess--lst-2:hover .mnu_ent--lst-2iii, .mnu_dess--lst-2:hover .mnu_ent_plat-2iii, .mnu_dess--lst-2:hover .mnu_plat--lst-2iii, .mnu_dess--lst-2:hover .mnu_plat_plat-2iii, .mnu_dess--lst-2:hover .mnu_dess--lst-2iii, .mnu_dess--lst-2:hover .mnu_dess_plat-2iii, .mnu_dess_plat-2:hover .mnu_ent--lst-2iii, .mnu_dess_plat-2:hover .mnu_ent_plat-2iii, .mnu_dess_plat-2:hover .mnu_plat--lst-2iii, .mnu_dess_plat-2:hover .mnu_plat_plat-2iii, .mnu_dess_plat-2:hover .mnu_dess--lst-2iii, .mnu_dess_plat-2:hover .mnu_dess_plat-2iii {
+  margin-right: 0rem;
+}
+@keyframes anim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .mnu_ent--lst-3, .mnu_ent_plat-3, .mnu_plat--lst-3, .mnu_plat_plat-3, .mnu_dess--lst-3, .mnu_dess_plat-3 {
   box-shadow: 0px 0px 5px #130f0f5b;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 75px;
   display: flex;
   margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  animation: anim 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
-.mnu_ent--lst-3 a, .mnu_ent_plat-3 a, .mnu_plat--lst-3 a, .mnu_plat_plat-3 a, .mnu_dess--lst-3 a, .mnu_dess_plat-3 a {
-  text-decoration: none;
-}
-.mnu_ent--lst-3i:nth-child(1), .mnu_ent_plat-3i:nth-child(1), .mnu_plat--lst-3i:nth-child(1), .mnu_plat_plat-3i:nth-child(1), .mnu_dess--lst-3i:nth-child(1), .mnu_dess_plat-3i:nth-child(1) {
-  border: 0.1rem solid black;
-  text-decoration: none;
-  flex: 3;
+.mnu_ent--lst-3i, .mnu_ent_plat-3i, .mnu_plat--lst-3i, .mnu_plat_plat-3i, .mnu_dess--lst-3i, .mnu_dess_plat-3i {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
   line-height: 100%;
   margin-left: 10px;
   overflow: auto;
 }
-.mnu_ent--lst-3ii:nth-child(2), .mnu_ent_plat-3ii:nth-child(2), .mnu_plat--lst-3ii:nth-child(2), .mnu_plat_plat-3ii:nth-child(2), .mnu_dess--lst-3ii:nth-child(2), .mnu_dess_plat-3ii:nth-child(2) {
-  border: 0.1rem solid black;
-  margin-top: 55px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 20px;
+.mnu_ent--lst-3i_1, .mnu_ent_plat-3i_1, .mnu_plat--lst-3i_1, .mnu_plat_plat-3i_1, .mnu_dess--lst-3i_1, .mnu_dess_plat-3i_1 {
+  margin: 0.8rem 1rem 1rem 0rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.mnu_ent--lst-3:hover + .mnu_ent--lst-3:hoveriii, .mnu_ent--lst-3:hover + .mnu_ent_plat-3:hoveriii, .mnu_ent--lst-3:hover + .mnu_plat--lst-3:hoveriii, .mnu_ent--lst-3:hover + .mnu_plat_plat-3:hoveriii, .mnu_ent--lst-3:hover + .mnu_dess--lst-3:hoveriii, .mnu_ent--lst-3:hover + .mnu_dess_plat-3:hoveriii, .mnu_ent_plat-3:hover + .mnu_ent--lst-3:hoveriii, .mnu_ent_plat-3:hover + .mnu_ent_plat-3:hoveriii, .mnu_ent_plat-3:hover + .mnu_plat--lst-3:hoveriii, .mnu_ent_plat-3:hover + .mnu_plat_plat-3:hoveriii, .mnu_ent_plat-3:hover + .mnu_dess--lst-3:hoveriii, .mnu_ent_plat-3:hover + .mnu_dess_plat-3:hoveriii, .mnu_plat--lst-3:hover + .mnu_ent--lst-3:hoveriii, .mnu_plat--lst-3:hover + .mnu_ent_plat-3:hoveriii, .mnu_plat--lst-3:hover + .mnu_plat--lst-3:hoveriii, .mnu_plat--lst-3:hover + .mnu_plat_plat-3:hoveriii, .mnu_plat--lst-3:hover + .mnu_dess--lst-3:hoveriii, .mnu_plat--lst-3:hover + .mnu_dess_plat-3:hoveriii, .mnu_plat_plat-3:hover + .mnu_ent--lst-3:hoveriii, .mnu_plat_plat-3:hover + .mnu_ent_plat-3:hoveriii, .mnu_plat_plat-3:hover + .mnu_plat--lst-3:hoveriii, .mnu_plat_plat-3:hover + .mnu_plat_plat-3:hoveriii, .mnu_plat_plat-3:hover + .mnu_dess--lst-3:hoveriii, .mnu_plat_plat-3:hover + .mnu_dess_plat-3:hoveriii, .mnu_dess--lst-3:hover + .mnu_ent--lst-3:hoveriii, .mnu_dess--lst-3:hover + .mnu_ent_plat-3:hoveriii, .mnu_dess--lst-3:hover + .mnu_plat--lst-3:hoveriii, .mnu_dess--lst-3:hover + .mnu_plat_plat-3:hoveriii, .mnu_dess--lst-3:hover + .mnu_dess--lst-3:hoveriii, .mnu_dess--lst-3:hover + .mnu_dess_plat-3:hoveriii, .mnu_dess_plat-3:hover + .mnu_ent--lst-3:hoveriii, .mnu_dess_plat-3:hover + .mnu_ent_plat-3:hoveriii, .mnu_dess_plat-3:hover + .mnu_plat--lst-3:hoveriii, .mnu_dess_plat-3:hover + .mnu_plat_plat-3:hoveriii, .mnu_dess_plat-3:hover + .mnu_dess--lst-3:hoveriii, .mnu_dess_plat-3:hover + .mnu_dess_plat-3:hoveriii {
-  border: 0.1rem solid black;
-  flex: 1;
-  width: 90px;
-  border-radius: 0px 20px 20px 0px;
-  text-align: center;
-  padding-top: 35px;
-  background-color: #99e2d0;
-  display: block;
+.mnu_ent--lst-3i_2, .mnu_ent_plat-3i_2, .mnu_plat--lst-3i_2, .mnu_plat_plat-3i_2, .mnu_dess--lst-3i_2, .mnu_dess_plat-3i_2 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 20px;
+}
+.mnu_ent--lst-3ii, .mnu_ent_plat-3ii, .mnu_plat--lst-3ii, .mnu_plat_plat-3ii, .mnu_dess--lst-3ii, .mnu_dess_plat-3ii {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 0.8rem;
 }
 .mnu_ent--lst-3iii, .mnu_ent_plat-3iii, .mnu_plat--lst-3iii, .mnu_plat_plat-3iii, .mnu_dess--lst-3iii, .mnu_dess_plat-3iii {
-  border: 0.1rem solid black;
-  transform: scaleX(0);
+  background-color: #99e2d0;
+  margin: -1em -5.5rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-3iii_v, .mnu_ent_plat-3iii_v, .mnu_plat--lst-3iii_v, .mnu_plat_plat-3iii_v, .mnu_dess--lst-3iii_v, .mnu_dess_plat-3iii_v {
+  height: 2rem;
+  width: 2rem;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-3iii_v_1, .mnu_ent_plat-3iii_v_1, .mnu_plat--lst-3iii_v_1, .mnu_plat_plat-3iii_v_1, .mnu_dess--lst-3iii_v_1, .mnu_dess_plat-3iii_v_1 {
+  color: #99e2d0;
+}
+.mnu_ent--lst-3iii:hover .mnu_ent--lst-3iii_v, .mnu_ent--lst-3iii:hover .mnu_ent_plat-3iii_v, .mnu_ent--lst-3iii:hover .mnu_plat--lst-3iii_v, .mnu_ent--lst-3iii:hover .mnu_plat_plat-3iii_v, .mnu_ent--lst-3iii:hover .mnu_dess--lst-3iii_v, .mnu_ent--lst-3iii:hover .mnu_dess_plat-3iii_v, .mnu_ent_plat-3iii:hover .mnu_ent--lst-3iii_v, .mnu_ent_plat-3iii:hover .mnu_ent_plat-3iii_v, .mnu_ent_plat-3iii:hover .mnu_plat--lst-3iii_v, .mnu_ent_plat-3iii:hover .mnu_plat_plat-3iii_v, .mnu_ent_plat-3iii:hover .mnu_dess--lst-3iii_v, .mnu_ent_plat-3iii:hover .mnu_dess_plat-3iii_v, .mnu_plat--lst-3iii:hover .mnu_ent--lst-3iii_v, .mnu_plat--lst-3iii:hover .mnu_ent_plat-3iii_v, .mnu_plat--lst-3iii:hover .mnu_plat--lst-3iii_v, .mnu_plat--lst-3iii:hover .mnu_plat_plat-3iii_v, .mnu_plat--lst-3iii:hover .mnu_dess--lst-3iii_v, .mnu_plat--lst-3iii:hover .mnu_dess_plat-3iii_v, .mnu_plat_plat-3iii:hover .mnu_ent--lst-3iii_v, .mnu_plat_plat-3iii:hover .mnu_ent_plat-3iii_v, .mnu_plat_plat-3iii:hover .mnu_plat--lst-3iii_v, .mnu_plat_plat-3iii:hover .mnu_plat_plat-3iii_v, .mnu_plat_plat-3iii:hover .mnu_dess--lst-3iii_v, .mnu_plat_plat-3iii:hover .mnu_dess_plat-3iii_v, .mnu_dess--lst-3iii:hover .mnu_ent--lst-3iii_v, .mnu_dess--lst-3iii:hover .mnu_ent_plat-3iii_v, .mnu_dess--lst-3iii:hover .mnu_plat--lst-3iii_v, .mnu_dess--lst-3iii:hover .mnu_plat_plat-3iii_v, .mnu_dess--lst-3iii:hover .mnu_dess--lst-3iii_v, .mnu_dess--lst-3iii:hover .mnu_dess_plat-3iii_v, .mnu_dess_plat-3iii:hover .mnu_ent--lst-3iii_v, .mnu_dess_plat-3iii:hover .mnu_ent_plat-3iii_v, .mnu_dess_plat-3iii:hover .mnu_plat--lst-3iii_v, .mnu_dess_plat-3iii:hover .mnu_plat_plat-3iii_v, .mnu_dess_plat-3iii:hover .mnu_dess--lst-3iii_v, .mnu_dess_plat-3iii:hover .mnu_dess_plat-3iii_v {
+  transform: rotate(0);
+}
+.mnu_ent--lst-3:hover .mnu_ent--lst-3iii, .mnu_ent--lst-3:hover .mnu_ent_plat-3iii, .mnu_ent--lst-3:hover .mnu_plat--lst-3iii, .mnu_ent--lst-3:hover .mnu_plat_plat-3iii, .mnu_ent--lst-3:hover .mnu_dess--lst-3iii, .mnu_ent--lst-3:hover .mnu_dess_plat-3iii, .mnu_ent_plat-3:hover .mnu_ent--lst-3iii, .mnu_ent_plat-3:hover .mnu_ent_plat-3iii, .mnu_ent_plat-3:hover .mnu_plat--lst-3iii, .mnu_ent_plat-3:hover .mnu_plat_plat-3iii, .mnu_ent_plat-3:hover .mnu_dess--lst-3iii, .mnu_ent_plat-3:hover .mnu_dess_plat-3iii, .mnu_plat--lst-3:hover .mnu_ent--lst-3iii, .mnu_plat--lst-3:hover .mnu_ent_plat-3iii, .mnu_plat--lst-3:hover .mnu_plat--lst-3iii, .mnu_plat--lst-3:hover .mnu_plat_plat-3iii, .mnu_plat--lst-3:hover .mnu_dess--lst-3iii, .mnu_plat--lst-3:hover .mnu_dess_plat-3iii, .mnu_plat_plat-3:hover .mnu_ent--lst-3iii, .mnu_plat_plat-3:hover .mnu_ent_plat-3iii, .mnu_plat_plat-3:hover .mnu_plat--lst-3iii, .mnu_plat_plat-3:hover .mnu_plat_plat-3iii, .mnu_plat_plat-3:hover .mnu_dess--lst-3iii, .mnu_plat_plat-3:hover .mnu_dess_plat-3iii, .mnu_dess--lst-3:hover .mnu_ent--lst-3iii, .mnu_dess--lst-3:hover .mnu_ent_plat-3iii, .mnu_dess--lst-3:hover .mnu_plat--lst-3iii, .mnu_dess--lst-3:hover .mnu_plat_plat-3iii, .mnu_dess--lst-3:hover .mnu_dess--lst-3iii, .mnu_dess--lst-3:hover .mnu_dess_plat-3iii, .mnu_dess_plat-3:hover .mnu_ent--lst-3iii, .mnu_dess_plat-3:hover .mnu_ent_plat-3iii, .mnu_dess_plat-3:hover .mnu_plat--lst-3iii, .mnu_dess_plat-3:hover .mnu_plat_plat-3iii, .mnu_dess_plat-3:hover .mnu_dess--lst-3iii, .mnu_dess_plat-3:hover .mnu_dess_plat-3iii {
+  margin-right: 0rem;
+}
+@keyframes anim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .mnu_ent--lst-4, .mnu_ent_plat-4, .mnu_plat--lst-4, .mnu_plat_plat-4, .mnu_dess--lst-4, .mnu_dess_plat-4 {
   box-shadow: 0px 0px 5px #130f0f5b;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 75px;
   display: flex;
   margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  animation: anim 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
-.mnu_ent--lst-4i:nth-child(1), .mnu_ent_plat-4i:nth-child(1), .mnu_plat--lst-4i:nth-child(1), .mnu_plat_plat-4i:nth-child(1), .mnu_dess--lst-4i:nth-child(1), .mnu_dess_plat-4i:nth-child(1) {
-  border: 0.1rem solid black;
-  text-decoration: none;
-  flex: 3;
+.mnu_ent--lst-4i, .mnu_ent_plat-4i, .mnu_plat--lst-4i, .mnu_plat_plat-4i, .mnu_dess--lst-4i, .mnu_dess_plat-4i {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
   line-height: 100%;
   margin-left: 10px;
   overflow: auto;
 }
-.mnu_ent--lst-4ii:nth-child(2), .mnu_ent_plat-4ii:nth-child(2), .mnu_plat--lst-4ii:nth-child(2), .mnu_plat_plat-4ii:nth-child(2), .mnu_dess--lst-4ii:nth-child(2), .mnu_dess_plat-4ii:nth-child(2) {
-  border: 0.1rem solid black;
-  margin-top: 55px;
-  margin-left: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 20px;
+.mnu_ent--lst-4i_1, .mnu_ent_plat-4i_1, .mnu_plat--lst-4i_1, .mnu_plat_plat-4i_1, .mnu_dess--lst-4i_1, .mnu_dess_plat-4i_1 {
+  margin: 0.8rem 1rem 1rem 0rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.mnu_ent--lst-4:hover + .mnu_ent--lst-4:hoveriii, .mnu_ent--lst-4:hover + .mnu_ent_plat-4:hoveriii, .mnu_ent--lst-4:hover + .mnu_plat--lst-4:hoveriii, .mnu_ent--lst-4:hover + .mnu_plat_plat-4:hoveriii, .mnu_ent--lst-4:hover + .mnu_dess--lst-4:hoveriii, .mnu_ent--lst-4:hover + .mnu_dess_plat-4:hoveriii, .mnu_ent_plat-4:hover + .mnu_ent--lst-4:hoveriii, .mnu_ent_plat-4:hover + .mnu_ent_plat-4:hoveriii, .mnu_ent_plat-4:hover + .mnu_plat--lst-4:hoveriii, .mnu_ent_plat-4:hover + .mnu_plat_plat-4:hoveriii, .mnu_ent_plat-4:hover + .mnu_dess--lst-4:hoveriii, .mnu_ent_plat-4:hover + .mnu_dess_plat-4:hoveriii, .mnu_plat--lst-4:hover + .mnu_ent--lst-4:hoveriii, .mnu_plat--lst-4:hover + .mnu_ent_plat-4:hoveriii, .mnu_plat--lst-4:hover + .mnu_plat--lst-4:hoveriii, .mnu_plat--lst-4:hover + .mnu_plat_plat-4:hoveriii, .mnu_plat--lst-4:hover + .mnu_dess--lst-4:hoveriii, .mnu_plat--lst-4:hover + .mnu_dess_plat-4:hoveriii, .mnu_plat_plat-4:hover + .mnu_ent--lst-4:hoveriii, .mnu_plat_plat-4:hover + .mnu_ent_plat-4:hoveriii, .mnu_plat_plat-4:hover + .mnu_plat--lst-4:hoveriii, .mnu_plat_plat-4:hover + .mnu_plat_plat-4:hoveriii, .mnu_plat_plat-4:hover + .mnu_dess--lst-4:hoveriii, .mnu_plat_plat-4:hover + .mnu_dess_plat-4:hoveriii, .mnu_dess--lst-4:hover + .mnu_ent--lst-4:hoveriii, .mnu_dess--lst-4:hover + .mnu_ent_plat-4:hoveriii, .mnu_dess--lst-4:hover + .mnu_plat--lst-4:hoveriii, .mnu_dess--lst-4:hover + .mnu_plat_plat-4:hoveriii, .mnu_dess--lst-4:hover + .mnu_dess--lst-4:hoveriii, .mnu_dess--lst-4:hover + .mnu_dess_plat-4:hoveriii, .mnu_dess_plat-4:hover + .mnu_ent--lst-4:hoveriii, .mnu_dess_plat-4:hover + .mnu_ent_plat-4:hoveriii, .mnu_dess_plat-4:hover + .mnu_plat--lst-4:hoveriii, .mnu_dess_plat-4:hover + .mnu_plat_plat-4:hoveriii, .mnu_dess_plat-4:hover + .mnu_dess--lst-4:hoveriii, .mnu_dess_plat-4:hover + .mnu_dess_plat-4:hoveriii {
-  border: 0.1rem solid black;
-  flex: 1;
-  width: 90px;
-  border-radius: 0px 20px 20px 0px;
-  text-align: center;
-  padding-top: 35px;
-  background-color: #99e2d0;
-  display: block;
+.mnu_ent--lst-4i_2, .mnu_ent_plat-4i_2, .mnu_plat--lst-4i_2, .mnu_plat_plat-4i_2, .mnu_dess--lst-4i_2, .mnu_dess_plat-4i_2 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 20px;
+}
+.mnu_ent--lst-4ii, .mnu_ent_plat-4ii, .mnu_plat--lst-4ii, .mnu_plat_plat-4ii, .mnu_dess--lst-4ii, .mnu_dess_plat-4ii {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 0.8rem;
 }
 .mnu_ent--lst-4iii, .mnu_ent_plat-4iii, .mnu_plat--lst-4iii, .mnu_plat_plat-4iii, .mnu_dess--lst-4iii, .mnu_dess_plat-4iii {
-  border: 0.1rem solid black;
-  transform: scaleX(0);
+  background-color: #99e2d0;
+  margin: -1em -5.5rem -1rem 1rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-4iii_v, .mnu_ent_plat-4iii_v, .mnu_plat--lst-4iii_v, .mnu_plat_plat-4iii_v, .mnu_dess--lst-4iii_v, .mnu_dess_plat-4iii_v {
+  height: 2rem;
+  width: 2rem;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.mnu_ent--lst-4iii_v_1, .mnu_ent_plat-4iii_v_1, .mnu_plat--lst-4iii_v_1, .mnu_plat_plat-4iii_v_1, .mnu_dess--lst-4iii_v_1, .mnu_dess_plat-4iii_v_1 {
+  color: #99e2d0;
+}
+.mnu_ent--lst-4iii:hover .mnu_ent--lst-4iii_v, .mnu_ent--lst-4iii:hover .mnu_ent_plat-4iii_v, .mnu_ent--lst-4iii:hover .mnu_plat--lst-4iii_v, .mnu_ent--lst-4iii:hover .mnu_plat_plat-4iii_v, .mnu_ent--lst-4iii:hover .mnu_dess--lst-4iii_v, .mnu_ent--lst-4iii:hover .mnu_dess_plat-4iii_v, .mnu_ent_plat-4iii:hover .mnu_ent--lst-4iii_v, .mnu_ent_plat-4iii:hover .mnu_ent_plat-4iii_v, .mnu_ent_plat-4iii:hover .mnu_plat--lst-4iii_v, .mnu_ent_plat-4iii:hover .mnu_plat_plat-4iii_v, .mnu_ent_plat-4iii:hover .mnu_dess--lst-4iii_v, .mnu_ent_plat-4iii:hover .mnu_dess_plat-4iii_v, .mnu_plat--lst-4iii:hover .mnu_ent--lst-4iii_v, .mnu_plat--lst-4iii:hover .mnu_ent_plat-4iii_v, .mnu_plat--lst-4iii:hover .mnu_plat--lst-4iii_v, .mnu_plat--lst-4iii:hover .mnu_plat_plat-4iii_v, .mnu_plat--lst-4iii:hover .mnu_dess--lst-4iii_v, .mnu_plat--lst-4iii:hover .mnu_dess_plat-4iii_v, .mnu_plat_plat-4iii:hover .mnu_ent--lst-4iii_v, .mnu_plat_plat-4iii:hover .mnu_ent_plat-4iii_v, .mnu_plat_plat-4iii:hover .mnu_plat--lst-4iii_v, .mnu_plat_plat-4iii:hover .mnu_plat_plat-4iii_v, .mnu_plat_plat-4iii:hover .mnu_dess--lst-4iii_v, .mnu_plat_plat-4iii:hover .mnu_dess_plat-4iii_v, .mnu_dess--lst-4iii:hover .mnu_ent--lst-4iii_v, .mnu_dess--lst-4iii:hover .mnu_ent_plat-4iii_v, .mnu_dess--lst-4iii:hover .mnu_plat--lst-4iii_v, .mnu_dess--lst-4iii:hover .mnu_plat_plat-4iii_v, .mnu_dess--lst-4iii:hover .mnu_dess--lst-4iii_v, .mnu_dess--lst-4iii:hover .mnu_dess_plat-4iii_v, .mnu_dess_plat-4iii:hover .mnu_ent--lst-4iii_v, .mnu_dess_plat-4iii:hover .mnu_ent_plat-4iii_v, .mnu_dess_plat-4iii:hover .mnu_plat--lst-4iii_v, .mnu_dess_plat-4iii:hover .mnu_plat_plat-4iii_v, .mnu_dess_plat-4iii:hover .mnu_dess--lst-4iii_v, .mnu_dess_plat-4iii:hover .mnu_dess_plat-4iii_v {
+  transform: rotate(0);
+}
+.mnu_ent--lst-4:hover .mnu_ent--lst-4iii, .mnu_ent--lst-4:hover .mnu_ent_plat-4iii, .mnu_ent--lst-4:hover .mnu_plat--lst-4iii, .mnu_ent--lst-4:hover .mnu_plat_plat-4iii, .mnu_ent--lst-4:hover .mnu_dess--lst-4iii, .mnu_ent--lst-4:hover .mnu_dess_plat-4iii, .mnu_ent_plat-4:hover .mnu_ent--lst-4iii, .mnu_ent_plat-4:hover .mnu_ent_plat-4iii, .mnu_ent_plat-4:hover .mnu_plat--lst-4iii, .mnu_ent_plat-4:hover .mnu_plat_plat-4iii, .mnu_ent_plat-4:hover .mnu_dess--lst-4iii, .mnu_ent_plat-4:hover .mnu_dess_plat-4iii, .mnu_plat--lst-4:hover .mnu_ent--lst-4iii, .mnu_plat--lst-4:hover .mnu_ent_plat-4iii, .mnu_plat--lst-4:hover .mnu_plat--lst-4iii, .mnu_plat--lst-4:hover .mnu_plat_plat-4iii, .mnu_plat--lst-4:hover .mnu_dess--lst-4iii, .mnu_plat--lst-4:hover .mnu_dess_plat-4iii, .mnu_plat_plat-4:hover .mnu_ent--lst-4iii, .mnu_plat_plat-4:hover .mnu_ent_plat-4iii, .mnu_plat_plat-4:hover .mnu_plat--lst-4iii, .mnu_plat_plat-4:hover .mnu_plat_plat-4iii, .mnu_plat_plat-4:hover .mnu_dess--lst-4iii, .mnu_plat_plat-4:hover .mnu_dess_plat-4iii, .mnu_dess--lst-4:hover .mnu_ent--lst-4iii, .mnu_dess--lst-4:hover .mnu_ent_plat-4iii, .mnu_dess--lst-4:hover .mnu_plat--lst-4iii, .mnu_dess--lst-4:hover .mnu_plat_plat-4iii, .mnu_dess--lst-4:hover .mnu_dess--lst-4iii, .mnu_dess--lst-4:hover .mnu_dess_plat-4iii, .mnu_dess_plat-4:hover .mnu_ent--lst-4iii, .mnu_dess_plat-4:hover .mnu_ent_plat-4iii, .mnu_dess_plat-4:hover .mnu_plat--lst-4iii, .mnu_dess_plat-4:hover .mnu_plat_plat-4iii, .mnu_dess_plat-4:hover .mnu_dess--lst-4iii, .mnu_dess_plat-4:hover .mnu_dess_plat-4iii {
+  margin-right: 0rem;
+}
+@keyframes anim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .foot {
