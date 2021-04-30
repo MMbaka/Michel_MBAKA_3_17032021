@@ -14,6 +14,7 @@ body, html {
   width: 100%;
   height: 5rem;
   text-align: center;
+  font-family: Shrikhand;
 }
 .hder__logo img {
   margin-top: 20px;
@@ -281,6 +282,7 @@ body, html {
   font-size: 25px;
   font-style: italic;
   font-weight: bold;
+  font-family: Shrikhand;
 }
 .mnu_ent, .mnu_plat, .mnu_dess {
   width: 90%;
@@ -325,7 +327,6 @@ body, html {
   flex: 1;
   line-height: 100%;
   margin-left: 10px;
-  overflow: auto;
 }
 .mnu_ent--lst-1i_1, .mnu_ent_plat-1i_1, .mnu_plat--lst-1i_1, .mnu_plat_plat-1i_1, .mnu_dess--lst-1i_1, .mnu_dess_plat-1i_1 {
   margin: 0.8rem 1rem 1rem 0rem;
@@ -364,7 +365,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 .mnu_ent--lst-1iii_v_1, .mnu_ent_plat-1iii_v_1, .mnu_plat--lst-1iii_v_1, .mnu_plat_plat-1iii_v_1, .mnu_dess--lst-1iii_v_1, .mnu_dess_plat-1iii_v_1 {
@@ -406,7 +407,6 @@ body, html {
   flex: 1;
   line-height: 100%;
   margin-left: 10px;
-  overflow: auto;
 }
 .mnu_ent--lst-2i_1, .mnu_ent_plat-2i_1, .mnu_plat--lst-2i_1, .mnu_plat_plat-2i_1, .mnu_dess--lst-2i_1, .mnu_dess_plat-2i_1 {
   margin: 0.8rem 1rem 1rem 0rem;
@@ -445,7 +445,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 .mnu_ent--lst-2iii_v_1, .mnu_ent_plat-2iii_v_1, .mnu_plat--lst-2iii_v_1, .mnu_plat_plat-2iii_v_1, .mnu_dess--lst-2iii_v_1, .mnu_dess_plat-2iii_v_1 {
@@ -487,7 +487,6 @@ body, html {
   flex: 1;
   line-height: 100%;
   margin-left: 10px;
-  overflow: auto;
 }
 .mnu_ent--lst-3i_1, .mnu_ent_plat-3i_1, .mnu_plat--lst-3i_1, .mnu_plat_plat-3i_1, .mnu_dess--lst-3i_1, .mnu_dess_plat-3i_1 {
   margin: 0.8rem 1rem 1rem 0rem;
@@ -526,7 +525,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 .mnu_ent--lst-3iii_v_1, .mnu_ent_plat-3iii_v_1, .mnu_plat--lst-3iii_v_1, .mnu_plat_plat-3iii_v_1, .mnu_dess--lst-3iii_v_1, .mnu_dess_plat-3iii_v_1 {
@@ -568,7 +567,6 @@ body, html {
   flex: 1;
   line-height: 100%;
   margin-left: 10px;
-  overflow: auto;
 }
 .mnu_ent--lst-4i_1, .mnu_ent_plat-4i_1, .mnu_plat--lst-4i_1, .mnu_plat_plat-4i_1, .mnu_dess--lst-4i_1, .mnu_dess_plat-4i_1 {
   margin: 0.8rem 1rem 1rem 0rem;
@@ -607,7 +605,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 .mnu_ent--lst-4iii_v_1, .mnu_ent_plat-4iii_v_1, .mnu_plat--lst-4iii_v_1, .mnu_plat_plat-4iii_v_1, .mnu_dess--lst-4iii_v_1, .mnu_dess_plat-4iii_v_1 {

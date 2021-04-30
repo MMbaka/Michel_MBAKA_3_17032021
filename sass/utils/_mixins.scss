@@ -77,7 +77,6 @@
         flex: 1;
         line-height: 100%;
         margin-left: 10px;
-        overflow: auto;
         &_1{
             margin: .8rem 1rem 1rem 0rem;
             white-space: nowrap;
@@ -115,7 +114,7 @@
             align-items:center;
             justify-content:center;
             border-radius: 100px;
-            transform: rotate(180deg);
+            transform: rotate(360deg);
             transition-duration: 0.5s;
             &_1{
                 color: $color-badg;
