@@ -13,10 +13,10 @@
         height: auto;
         margin: 25px 20px ;
         &--i{
-            font-size: 25px;
+            font-size: 2rem;
             font-style: italic;
             font-weight: bold;
-            font-family: Shrikhand;
+            font-family: "Shrikhand", "cursive";
         }
     }
     &_ent,&_plat,&_dess{
@@ -39,15 +39,6 @@
             height: auto;
             margin-top: 15px;
             &-1{
-                @include lstv
-            }
-            &-2{
-                @include lstv
-            }
-            &-3{
-                @include lstv
-            }
-            &-4{
                 @include lstv
             }
         }
