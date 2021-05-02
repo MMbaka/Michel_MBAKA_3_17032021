@@ -194,9 +194,9 @@
     }
 }
 
-@mixin valid {
+@mixin hover {
     &:hover {
-        transform: scaleX(1);
+        transform: scaleX(1.1);
     }
 }
 

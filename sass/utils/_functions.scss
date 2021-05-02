@@ -1,7 +1,5 @@
-@function lightness-shift($colour) {
-    @if (lightness($colour) < 25%){
-        @return lighten($colour, 10%);
-    }@else{
-        @return darken($colour, 10%);
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
     }
 }
