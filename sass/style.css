@@ -131,9 +131,6 @@ body, html {
   padding-top: 20px;
   transition: transform 450ms, 300ms 150ms;
 }
-.nav__tit--btn:hover {
-  transform: scaleX(1.1);
-}
 .nav__tit--btn-action {
   background: linear-gradient(to top, #9356dc, #e690c9 100%);
   text-decoration: none;
@@ -148,6 +145,11 @@ body, html {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+}
+.nav__tit--btn-action:hover {
+  background-color: white;
+  box-shadow: 0px 0px 15px #130f0f5b;
+  background: linear-gradient(to top, #9356dc, #e690c9 150%);
 }
 .nav__tit--btn-action:active {
   transform: translate(0, 5px);
@@ -227,9 +229,6 @@ body, html {
   box-shadow: 0px 0px 15px #130f0f5b;
   margin-top: 40px;
   transition: transform 450ms, 300ms 150ms;
-}
-.fonc_op--choix:hover, .fonc_op--comp:hover, .fonc_op--degus:hover {
-  transform: scaleX(1.1);
 }
 .fonc_op--choix-ix, .fonc_op--choix-ip, .fonc_op--choix-is, .fonc_op--comp-ix, .fonc_op--comp-ip, .fonc_op--comp-is, .fonc_op--degus-ix, .fonc_op--degus-ip, .fonc_op--degus-is {
   display: flex;

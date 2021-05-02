@@ -4,7 +4,6 @@
 
 @mixin btn{
     &--btn {
-        @include hover;
         display: flex;
         width: 100%;
         height: auto;
@@ -13,6 +12,7 @@
         padding-top: 20px;
         transition: transform 450ms, 300ms 150ms;
             &-action{
+            @include hover;
             background: linear-gradient(to top , $color-tertiary, $color-invalid 100%);                       
             text-decoration: none;
             height: 20px;
@@ -179,24 +179,12 @@
     }
 }
 
-@mixin hover {
-    &:hover {
-       & + &iii{
-            @include border;
-            flex: 1;
-            width: 90px;
-            border-radius: 0px 20px 20px 0px;
-            text-align: center;
-            padding-top: 35px;
-            background-color:$color-badg ;
-            display: block;
-        }
-    }
-}
 
 @mixin hover {
     &:hover {
-        transform: scaleX(1.1);
+        background-color: white;
+        box-shadow: 0px 0px 15px  ($color-shadow);
+        background: linear-gradient(to top , $color-tertiary, $color-invalid 150%);                       
     }
 }
 
