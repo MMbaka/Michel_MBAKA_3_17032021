@@ -87,9 +87,10 @@ body, html {
 
 .nav {
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .nav__geo {
   background-color: #eaeaea;
@@ -211,23 +212,20 @@ body, html {
   height: auto;
 }
 .fonc_tit {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 20px;
   font-size: 25px;
 }
 .fonc_op {
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
-  height: 350px;
+  height: auto;
 }
 .fonc_op--choix, .fonc_op--comp, .fonc_op--degus {
   background-color: #f6f6f6;
-  width: 85%;
+  width: 30%;
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -264,6 +262,42 @@ body, html {
   font-size: 21px;
 }
 
+@media only screen and (max-width: 800px) {
+  .fonc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .fonc_tit {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .fonc_op {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  .fonc_op--choix, .fonc_op--comp, .fonc_op--degus {
+    background-color: #f6f6f6;
+    width: 85%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 25px;
+    padding: 30px 0px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #130f0f5b;
+    margin-top: 40px;
+    transition: transform 450ms, 300ms 150ms;
+  }
+}
 .resto {
   /*Parametrage section restorant*/
   display: flex;
@@ -294,21 +328,20 @@ body, html {
   top: 340px;
 }
 .resto_img {
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: auto;
-  align-items: center;
   justify-content: space-around;
   padding-bottom: 80px;
-  margin-top: -40px;
+  margin-top: 30px;
 }
 .resto_img--1 {
-  width: 90%;
-  height: 300px;
+  width: 47%;
+  height: auto;
   border-radius: 25px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 0px 0px 15px #130f0f5b;
   background-color: #fff;
 }
@@ -317,10 +350,25 @@ body, html {
   height: 200px;
   border-radius: 25px 25px 0px 0px;
 }
+.resto_img--1-i span {
+  width: auto;
+  height: 25px;
+  text-align: center;
+  padding-top: 6px;
+  background-color: #99e2d0;
+  position: relative;
+  top: -11rem;
+  left: 30rem;
+  color: #008766;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 20px;
+}
 .resto_img--1-i img {
   width: 100%;
   height: 200px;
   border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
 }
 .resto_img--1-ii {
   display: flex;
@@ -365,9 +413,51 @@ body, html {
   opacity: 0;
   transition: 0.5s;
   content: "";
+  color: linear-gradient(to top, #9356dc, #e690c9 100%);
 }
 .resto_img--1-iiii_w:hover {
   opacity: 1;
+}
+.resto_img--1 a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+  .resto_img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    margin-top: 30px;
+  }
+  .resto_img--1 {
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px #130f0f5b;
+    background-color: #fff;
+  }
+  .resto_img--1-i {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .resto_img--1-i span {
+    width: auto;
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: #99e2d0;
+    position: relative;
+    top: -11rem;
+    left: 18rem;
+    color: #008766;
+    border-radius: 2px;
+    padding: 5px;
+  }
 }
 
 .imgarp {
@@ -524,7 +614,7 @@ body, html {
   text-decoration: none;
   color: #fff;
 }
-.foot_log {
+.foot_logo {
   margin: 30px 30px;
   font-size: 2.5rem;
   font-style: italic;
@@ -532,9 +622,11 @@ body, html {
   font-family: "shrikhand", "cursive";
   color: #fff;
 }
-.foot_log img {
-  width: auto;
-  height: 20px;
+.foot_logo img {
+  width: 150px;
+  height: 30px;
+  margin-bottom: -20px;
+  margin-left: -10px;
   color: #fff;
 }
 .foot_lis {

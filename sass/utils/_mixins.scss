@@ -158,19 +158,22 @@
         text-decoration: none;
         color: $color-white;        
     }
-    &_log{
+    &_logo{
         margin:30px 30px ;
         font-size: 2.5rem;
         font-style: italic;
         font-weight: bolder;
         font-family: "shrikhand", 'cursive';
         color:$color-white ;
-        & img{
-            width: auto;
-            height: 20px;
-            color: $color-white; 
-        }
     }
+    &_logo img{
+        width: 150px;
+        height: 30px;
+        margin-bottom: -20px;
+        margin-left: -10px;
+        color: $color-white; 
+    }
+
     &_lis{
         display: flex;
         margin-left: 20px;
