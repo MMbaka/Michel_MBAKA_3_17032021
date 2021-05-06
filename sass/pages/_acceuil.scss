@@ -14,30 +14,46 @@
     justify-content:center;
   
     &__item {
-      height: 1rem;
-      width: 1rem;
-      border-radius: 1rem;
-      animation: jump 1s;
+      height: 10rem;
+      width: 2rem;
+      animation: jump 1.5s;
       animation-iteration-count: 1;
   
       &Container {
         display: flex;
-        width: 5rem;
+        width: 20rem;
         justify-content: space-between;
       }
   
       &--1 {
         background-color: $color-primary;
+        margin: 1rem;
       }
     
       &--2 {
         background-color: $color-secondary;
-        animation-delay: 0.25s;
+        animation-delay: 0.15s;
+        margin: 1rem;
       }
     
       &--3 {
         background-color: $color-tertiary;
+        animation-delay: 0.25s;
+        margin: 1rem;
+      }
+      &--4 {
+        background-color: $color-primary;
         animation-delay: 0.5s;
+        margin: 1rem;
+      }
+      &--5 {
+        background-color: $color-secondary;
+        animation-delay: 0.75s;
+        margin: 1rem;
+      }
+      &--6 {
+        background-color: $color-tertiary;
+        animation-delay: 1s;
       }
     }
 }
