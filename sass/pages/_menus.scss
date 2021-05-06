@@ -22,7 +22,7 @@
     &_tit{
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 95%;
         height: auto;
         margin: 25px 20px ;
         &--i{
@@ -35,31 +35,50 @@
             margin-top: 5px;
         }
     }
-    &_ent,&_plat,&_dess{
-        width: 90%;
+    &_bloc{
+        width: 100%;
         height: auto;
-        margin: 25px 20px ;
-        &--tit{
-            display: inline;
-        }
-        &--tit::after{
-            content: "";
-            display: block;
-            width: 40px;
-            height: 3px;
-            margin-top: 5px;
-            background:$color-badg; 
-        }
-        &--lst,&_plat{
-            width: 100%;
+        display: flex;
+        &_ent,&_plat,&_dess{
+            width: 35%;
             height: auto;
-            margin-top: 15px;
-            &-1{
+            margin: 25px 20px ;
+                &--tit{
+                display: inline;
+                }
+                &--tit::after{
+                content: "";
+                display: block;
+                width: 40px;
+                height: 3px;
+                margin-top: 5px;
+                background:$color-badg; 
+                }
+                &--lst,&_plat{
+                width: 100%;
+                height: auto;
+                margin-top: 15px;
+                &-1{
                 @include lstv
                 
+                }
+            }
+
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        &_bloc{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            &_ent,&_plat,&_dess{
+                width: 90%;
+                height: auto;
+                margin: 25px 20px ;
+    
             }
         }
-
     }
 }
 

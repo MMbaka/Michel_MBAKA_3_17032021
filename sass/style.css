@@ -74,6 +74,11 @@ body, html {
   height: auto;
   padding: 0;
 }
+.hder__i {
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
+}
 .hder__logo {
   width: 100%;
   height: 5rem;
@@ -485,7 +490,7 @@ body, html {
 .mnu_tit {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   height: auto;
   margin: 25px 20px;
 }
@@ -498,15 +503,20 @@ body, html {
 .mnu_tit--ii {
   margin-top: 5px;
 }
-.mnu_ent, .mnu_plat, .mnu_dess {
-  width: 90%;
+.mnu_bloc {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.mnu_bloc_ent, .mnu_bloc_plat, .mnu_bloc_dess {
+  width: 35%;
   height: auto;
   margin: 25px 20px;
 }
-.mnu_ent--tit, .mnu_plat--tit, .mnu_dess--tit {
+.mnu_bloc_ent--tit, .mnu_bloc_plat--tit, .mnu_bloc_dess--tit {
   display: inline;
 }
-.mnu_ent--tit::after, .mnu_plat--tit::after, .mnu_dess--tit::after {
+.mnu_bloc_ent--tit::after, .mnu_bloc_plat--tit::after, .mnu_bloc_dess--tit::after {
   content: "";
   display: block;
   width: 40px;
@@ -514,12 +524,12 @@ body, html {
   margin-top: 5px;
   background: #99e2d0;
 }
-.mnu_ent--lst, .mnu_ent_plat, .mnu_plat--lst, .mnu_plat_plat, .mnu_dess--lst, .mnu_dess_plat {
+.mnu_bloc_ent--lst, .mnu_bloc_ent_plat, .mnu_bloc_plat--lst, .mnu_bloc_plat_plat, .mnu_bloc_dess--lst, .mnu_bloc_dess_plat {
   width: 100%;
   height: auto;
   margin-top: 15px;
 }
-.mnu_ent--lst-1, .mnu_ent_plat-1, .mnu_plat--lst-1, .mnu_plat_plat-1, .mnu_dess--lst-1, .mnu_dess_plat-1 {
+.mnu_bloc_ent--lst-1, .mnu_bloc_ent_plat-1, .mnu_bloc_plat--lst-1, .mnu_bloc_plat_plat-1, .mnu_bloc_dess--lst-1, .mnu_bloc_dess_plat-1 {
   box-shadow: 0px 0px 5px #130f0f5b;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
@@ -534,7 +544,7 @@ body, html {
   animation-fill-mode: both;
   transform: scale(0);
 }
-.mnu_ent--lst-1i, .mnu_ent_plat-1i, .mnu_plat--lst-1i, .mnu_plat_plat-1i, .mnu_dess--lst-1i, .mnu_dess_plat-1i {
+.mnu_bloc_ent--lst-1i, .mnu_bloc_ent_plat-1i, .mnu_bloc_plat--lst-1i, .mnu_bloc_plat_plat-1i, .mnu_bloc_dess--lst-1i, .mnu_bloc_dess_plat-1i {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -542,27 +552,27 @@ body, html {
   line-height: 100%;
   margin-left: 10px;
 }
-.mnu_ent--lst-1i_1, .mnu_ent_plat-1i_1, .mnu_plat--lst-1i_1, .mnu_plat_plat-1i_1, .mnu_dess--lst-1i_1, .mnu_dess_plat-1i_1 {
+.mnu_bloc_ent--lst-1i_1, .mnu_bloc_ent_plat-1i_1, .mnu_bloc_plat--lst-1i_1, .mnu_bloc_plat_plat-1i_1, .mnu_bloc_dess--lst-1i_1, .mnu_bloc_dess_plat-1i_1 {
   margin: 0.8rem 1rem 1rem 0rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.mnu_ent--lst-1i_2, .mnu_ent_plat-1i_2, .mnu_plat--lst-1i_2, .mnu_plat_plat-1i_2, .mnu_dess--lst-1i_2, .mnu_dess_plat-1i_2 {
+.mnu_bloc_ent--lst-1i_2, .mnu_bloc_ent_plat-1i_2, .mnu_bloc_plat--lst-1i_2, .mnu_bloc_plat_plat-1i_2, .mnu_bloc_dess--lst-1i_2, .mnu_bloc_dess_plat-1i_2 {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 20px;
 }
-.mnu_ent--lst-1ii, .mnu_ent_plat-1ii, .mnu_plat--lst-1ii, .mnu_plat_plat-1ii, .mnu_dess--lst-1ii, .mnu_dess_plat-1ii {
+.mnu_bloc_ent--lst-1ii, .mnu_bloc_ent_plat-1ii, .mnu_bloc_plat--lst-1ii, .mnu_bloc_plat_plat-1ii, .mnu_bloc_dess--lst-1ii, .mnu_bloc_dess_plat-1ii {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 0.8rem;
 }
-.mnu_ent--lst-1iii, .mnu_ent_plat-1iii, .mnu_plat--lst-1iii, .mnu_plat_plat-1iii, .mnu_dess--lst-1iii, .mnu_dess_plat-1iii {
+.mnu_bloc_ent--lst-1iii, .mnu_bloc_ent_plat-1iii, .mnu_bloc_plat--lst-1iii, .mnu_bloc_plat_plat-1iii, .mnu_bloc_dess--lst-1iii, .mnu_bloc_dess_plat-1iii {
   background-color: #99e2d0;
   margin: -1em -5.5rem -1rem 1rem;
   width: 5rem;
@@ -571,7 +581,7 @@ body, html {
   justify-content: center;
   transition-duration: 0.5s;
 }
-.mnu_ent--lst-1iii_v, .mnu_ent_plat-1iii_v, .mnu_plat--lst-1iii_v, .mnu_plat_plat-1iii_v, .mnu_dess--lst-1iii_v, .mnu_dess_plat-1iii_v {
+.mnu_bloc_ent--lst-1iii_v, .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_dess_plat-1iii_v {
   height: 2rem;
   width: 2rem;
   background-color: #99e2d0;
@@ -582,13 +592,13 @@ body, html {
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }
-.mnu_ent--lst-1iii_v_1, .mnu_ent_plat-1iii_v_1, .mnu_plat--lst-1iii_v_1, .mnu_plat_plat-1iii_v_1, .mnu_dess--lst-1iii_v_1, .mnu_dess_plat-1iii_v_1 {
+.mnu_bloc_ent--lst-1iii_v_1, .mnu_bloc_ent_plat-1iii_v_1, .mnu_bloc_plat--lst-1iii_v_1, .mnu_bloc_plat_plat-1iii_v_1, .mnu_bloc_dess--lst-1iii_v_1, .mnu_bloc_dess_plat-1iii_v_1 {
   color: #99e2d0;
 }
-.mnu_ent--lst-1iii:hover .mnu_ent--lst-1iii_v, .mnu_ent--lst-1iii:hover .mnu_ent_plat-1iii_v, .mnu_ent--lst-1iii:hover .mnu_plat--lst-1iii_v, .mnu_ent--lst-1iii:hover .mnu_plat_plat-1iii_v, .mnu_ent--lst-1iii:hover .mnu_dess--lst-1iii_v, .mnu_ent--lst-1iii:hover .mnu_dess_plat-1iii_v, .mnu_ent_plat-1iii:hover .mnu_ent--lst-1iii_v, .mnu_ent_plat-1iii:hover .mnu_ent_plat-1iii_v, .mnu_ent_plat-1iii:hover .mnu_plat--lst-1iii_v, .mnu_ent_plat-1iii:hover .mnu_plat_plat-1iii_v, .mnu_ent_plat-1iii:hover .mnu_dess--lst-1iii_v, .mnu_ent_plat-1iii:hover .mnu_dess_plat-1iii_v, .mnu_plat--lst-1iii:hover .mnu_ent--lst-1iii_v, .mnu_plat--lst-1iii:hover .mnu_ent_plat-1iii_v, .mnu_plat--lst-1iii:hover .mnu_plat--lst-1iii_v, .mnu_plat--lst-1iii:hover .mnu_plat_plat-1iii_v, .mnu_plat--lst-1iii:hover .mnu_dess--lst-1iii_v, .mnu_plat--lst-1iii:hover .mnu_dess_plat-1iii_v, .mnu_plat_plat-1iii:hover .mnu_ent--lst-1iii_v, .mnu_plat_plat-1iii:hover .mnu_ent_plat-1iii_v, .mnu_plat_plat-1iii:hover .mnu_plat--lst-1iii_v, .mnu_plat_plat-1iii:hover .mnu_plat_plat-1iii_v, .mnu_plat_plat-1iii:hover .mnu_dess--lst-1iii_v, .mnu_plat_plat-1iii:hover .mnu_dess_plat-1iii_v, .mnu_dess--lst-1iii:hover .mnu_ent--lst-1iii_v, .mnu_dess--lst-1iii:hover .mnu_ent_plat-1iii_v, .mnu_dess--lst-1iii:hover .mnu_plat--lst-1iii_v, .mnu_dess--lst-1iii:hover .mnu_plat_plat-1iii_v, .mnu_dess--lst-1iii:hover .mnu_dess--lst-1iii_v, .mnu_dess--lst-1iii:hover .mnu_dess_plat-1iii_v, .mnu_dess_plat-1iii:hover .mnu_ent--lst-1iii_v, .mnu_dess_plat-1iii:hover .mnu_ent_plat-1iii_v, .mnu_dess_plat-1iii:hover .mnu_plat--lst-1iii_v, .mnu_dess_plat-1iii:hover .mnu_plat_plat-1iii_v, .mnu_dess_plat-1iii:hover .mnu_dess--lst-1iii_v, .mnu_dess_plat-1iii:hover .mnu_dess_plat-1iii_v {
+.mnu_bloc_ent--lst-1iii:hover .mnu_bloc_ent--lst-1iii_v, .mnu_bloc_ent--lst-1iii:hover .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_ent--lst-1iii:hover .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_ent--lst-1iii:hover .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_ent--lst-1iii:hover .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_ent--lst-1iii:hover .mnu_bloc_dess_plat-1iii_v, .mnu_bloc_ent_plat-1iii:hover .mnu_bloc_ent--lst-1iii_v, .mnu_bloc_ent_plat-1iii:hover .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_ent_plat-1iii:hover .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_ent_plat-1iii:hover .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_ent_plat-1iii:hover .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_ent_plat-1iii:hover .mnu_bloc_dess_plat-1iii_v, .mnu_bloc_plat--lst-1iii:hover .mnu_bloc_ent--lst-1iii_v, .mnu_bloc_plat--lst-1iii:hover .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_plat--lst-1iii:hover .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_plat--lst-1iii:hover .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_plat--lst-1iii:hover .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_plat--lst-1iii:hover .mnu_bloc_dess_plat-1iii_v, .mnu_bloc_plat_plat-1iii:hover .mnu_bloc_ent--lst-1iii_v, .mnu_bloc_plat_plat-1iii:hover .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_plat_plat-1iii:hover .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_plat_plat-1iii:hover .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_plat_plat-1iii:hover .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_plat_plat-1iii:hover .mnu_bloc_dess_plat-1iii_v, .mnu_bloc_dess--lst-1iii:hover .mnu_bloc_ent--lst-1iii_v, .mnu_bloc_dess--lst-1iii:hover .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_dess--lst-1iii:hover .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_dess--lst-1iii:hover .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_dess--lst-1iii:hover .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_dess--lst-1iii:hover .mnu_bloc_dess_plat-1iii_v, .mnu_bloc_dess_plat-1iii:hover .mnu_bloc_ent--lst-1iii_v, .mnu_bloc_dess_plat-1iii:hover .mnu_bloc_ent_plat-1iii_v, .mnu_bloc_dess_plat-1iii:hover .mnu_bloc_plat--lst-1iii_v, .mnu_bloc_dess_plat-1iii:hover .mnu_bloc_plat_plat-1iii_v, .mnu_bloc_dess_plat-1iii:hover .mnu_bloc_dess--lst-1iii_v, .mnu_bloc_dess_plat-1iii:hover .mnu_bloc_dess_plat-1iii_v {
   transform: rotate(0);
 }
-.mnu_ent--lst-1:hover .mnu_ent--lst-1iii, .mnu_ent--lst-1:hover .mnu_ent_plat-1iii, .mnu_ent--lst-1:hover .mnu_plat--lst-1iii, .mnu_ent--lst-1:hover .mnu_plat_plat-1iii, .mnu_ent--lst-1:hover .mnu_dess--lst-1iii, .mnu_ent--lst-1:hover .mnu_dess_plat-1iii, .mnu_ent_plat-1:hover .mnu_ent--lst-1iii, .mnu_ent_plat-1:hover .mnu_ent_plat-1iii, .mnu_ent_plat-1:hover .mnu_plat--lst-1iii, .mnu_ent_plat-1:hover .mnu_plat_plat-1iii, .mnu_ent_plat-1:hover .mnu_dess--lst-1iii, .mnu_ent_plat-1:hover .mnu_dess_plat-1iii, .mnu_plat--lst-1:hover .mnu_ent--lst-1iii, .mnu_plat--lst-1:hover .mnu_ent_plat-1iii, .mnu_plat--lst-1:hover .mnu_plat--lst-1iii, .mnu_plat--lst-1:hover .mnu_plat_plat-1iii, .mnu_plat--lst-1:hover .mnu_dess--lst-1iii, .mnu_plat--lst-1:hover .mnu_dess_plat-1iii, .mnu_plat_plat-1:hover .mnu_ent--lst-1iii, .mnu_plat_plat-1:hover .mnu_ent_plat-1iii, .mnu_plat_plat-1:hover .mnu_plat--lst-1iii, .mnu_plat_plat-1:hover .mnu_plat_plat-1iii, .mnu_plat_plat-1:hover .mnu_dess--lst-1iii, .mnu_plat_plat-1:hover .mnu_dess_plat-1iii, .mnu_dess--lst-1:hover .mnu_ent--lst-1iii, .mnu_dess--lst-1:hover .mnu_ent_plat-1iii, .mnu_dess--lst-1:hover .mnu_plat--lst-1iii, .mnu_dess--lst-1:hover .mnu_plat_plat-1iii, .mnu_dess--lst-1:hover .mnu_dess--lst-1iii, .mnu_dess--lst-1:hover .mnu_dess_plat-1iii, .mnu_dess_plat-1:hover .mnu_ent--lst-1iii, .mnu_dess_plat-1:hover .mnu_ent_plat-1iii, .mnu_dess_plat-1:hover .mnu_plat--lst-1iii, .mnu_dess_plat-1:hover .mnu_plat_plat-1iii, .mnu_dess_plat-1:hover .mnu_dess--lst-1iii, .mnu_dess_plat-1:hover .mnu_dess_plat-1iii {
+.mnu_bloc_ent--lst-1:hover .mnu_bloc_ent--lst-1iii, .mnu_bloc_ent--lst-1:hover .mnu_bloc_ent_plat-1iii, .mnu_bloc_ent--lst-1:hover .mnu_bloc_plat--lst-1iii, .mnu_bloc_ent--lst-1:hover .mnu_bloc_plat_plat-1iii, .mnu_bloc_ent--lst-1:hover .mnu_bloc_dess--lst-1iii, .mnu_bloc_ent--lst-1:hover .mnu_bloc_dess_plat-1iii, .mnu_bloc_ent_plat-1:hover .mnu_bloc_ent--lst-1iii, .mnu_bloc_ent_plat-1:hover .mnu_bloc_ent_plat-1iii, .mnu_bloc_ent_plat-1:hover .mnu_bloc_plat--lst-1iii, .mnu_bloc_ent_plat-1:hover .mnu_bloc_plat_plat-1iii, .mnu_bloc_ent_plat-1:hover .mnu_bloc_dess--lst-1iii, .mnu_bloc_ent_plat-1:hover .mnu_bloc_dess_plat-1iii, .mnu_bloc_plat--lst-1:hover .mnu_bloc_ent--lst-1iii, .mnu_bloc_plat--lst-1:hover .mnu_bloc_ent_plat-1iii, .mnu_bloc_plat--lst-1:hover .mnu_bloc_plat--lst-1iii, .mnu_bloc_plat--lst-1:hover .mnu_bloc_plat_plat-1iii, .mnu_bloc_plat--lst-1:hover .mnu_bloc_dess--lst-1iii, .mnu_bloc_plat--lst-1:hover .mnu_bloc_dess_plat-1iii, .mnu_bloc_plat_plat-1:hover .mnu_bloc_ent--lst-1iii, .mnu_bloc_plat_plat-1:hover .mnu_bloc_ent_plat-1iii, .mnu_bloc_plat_plat-1:hover .mnu_bloc_plat--lst-1iii, .mnu_bloc_plat_plat-1:hover .mnu_bloc_plat_plat-1iii, .mnu_bloc_plat_plat-1:hover .mnu_bloc_dess--lst-1iii, .mnu_bloc_plat_plat-1:hover .mnu_bloc_dess_plat-1iii, .mnu_bloc_dess--lst-1:hover .mnu_bloc_ent--lst-1iii, .mnu_bloc_dess--lst-1:hover .mnu_bloc_ent_plat-1iii, .mnu_bloc_dess--lst-1:hover .mnu_bloc_plat--lst-1iii, .mnu_bloc_dess--lst-1:hover .mnu_bloc_plat_plat-1iii, .mnu_bloc_dess--lst-1:hover .mnu_bloc_dess--lst-1iii, .mnu_bloc_dess--lst-1:hover .mnu_bloc_dess_plat-1iii, .mnu_bloc_dess_plat-1:hover .mnu_bloc_ent--lst-1iii, .mnu_bloc_dess_plat-1:hover .mnu_bloc_ent_plat-1iii, .mnu_bloc_dess_plat-1:hover .mnu_bloc_plat--lst-1iii, .mnu_bloc_dess_plat-1:hover .mnu_bloc_plat_plat-1iii, .mnu_bloc_dess_plat-1:hover .mnu_bloc_dess--lst-1iii, .mnu_bloc_dess_plat-1:hover .mnu_bloc_dess_plat-1iii {
   margin-right: 0rem;
 }
 @keyframes anim {
@@ -597,6 +607,19 @@ body, html {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mnu_bloc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .mnu_bloc_ent, .mnu_bloc_plat, .mnu_bloc_dess {
+    width: 90%;
+    height: auto;
+    margin: 25px 20px;
   }
 }
 
