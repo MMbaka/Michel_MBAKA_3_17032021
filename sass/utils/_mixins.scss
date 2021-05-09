@@ -77,18 +77,22 @@
         flex: 1;
         line-height: 100%;
         margin-left: 10px;
+        display: block;
         &_1{
             margin: .8rem 1rem 1rem 0rem;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            display: block;
         }
         &_2{
+            display: block;
             margin: 0;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
             font-size: 20px
+            
         }
     }
     &ii{
@@ -114,10 +118,11 @@
             align-items:center;
             justify-content:center;
             border-radius: 100px;
-            transform: rotate(360deg);
+            transform: rotate(180deg);
             transition-duration: 0.5s;
             &_1{
                 color: $color-badg;
+                display: inline-block;
             }
         }
         &:hover &_v {
